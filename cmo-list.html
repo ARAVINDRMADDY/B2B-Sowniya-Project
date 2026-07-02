@@ -152,32 +152,33 @@
                             <h3 class="text-2xl font-extrabold text-headtext mb-1">Get a Free Sample</h3>
                             <p class="text-xs text-paratext">Fill out the form below to receive targeted data.</p>
                         </div>
-                        <form class="space-y-3.5">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3.5">
+                        <input type="hidden" name="access_key" value="bf9b4d31-592a-4405-9d10-020f99f9fd14">
                             <div class="relative">
                                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                     <svg class="w-4 h-4 text-paratext" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                                 </div>
-                                <input type="text" placeholder="Full Name*" required class="w-full pl-10 pr-4 py-2.5 bg-bgsec border border-bordercol rounded-md text-sm text-headtext focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all">
+                                <input name="name" type="text" placeholder="Full Name*" required class="w-full pl-10 pr-4 py-2.5 bg-bgsec border border-bordercol rounded-md text-sm text-headtext focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all">
                             </div>
                             <div class="relative">
                                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                     <svg class="w-4 h-4 text-paratext" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                                 </div>
-                                <input type="email" placeholder="Business Email*" required class="w-full pl-10 pr-4 py-2.5 bg-bgsec border border-bordercol rounded-md text-sm text-headtext focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all">
+                                <input name="email" type="email" placeholder="Business Email*" required class="w-full pl-10 pr-4 py-2.5 bg-bgsec border border-bordercol rounded-md text-sm text-headtext focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all">
                             </div>
                             <div class="flex">
                                 <button type="button" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-3 text-sm font-medium text-center text-headtext bg-bgsec border border-bordercol rounded-l-md hover:bg-gray-200 focus:outline-none transition-colors">
                                     <img src="https://flagcdn.com/w20/us.png" alt="US" class="h-3 w-4 mr-1 inline"> +1 <span class="text-[10px] ml-1">▼</span>
                                 </button>
                                 <div class="relative w-full">
-                                    <input type="tel" placeholder="Business Phone*" required class="block w-full pl-3 pr-4 py-2.5 bg-bgsec border border-l-0 border-bordercol rounded-r-md text-sm text-headtext focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all">
+                                    <input name="phone" type="tel" placeholder="Business Phone*" required class="block w-full pl-3 pr-4 py-2.5 bg-bgsec border border-l-0 border-bordercol rounded-r-md text-sm text-headtext focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all">
                                 </div>
                             </div>
                             <div class="relative">
                                 <div class="absolute inset-y-0 left-0 pl-3 pt-3 flex items-start pointer-events-none">
                                     <svg class="w-4 h-4 text-paratext" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
                                 </div>
-                                <textarea rows="2" placeholder="Describe Your Requirements*" required class="w-full pl-10 pr-4 py-2.5 bg-bgsec border border-bordercol rounded-md text-sm text-headtext focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all resize-none"></textarea>
+                                <textarea name="message" rows="2" placeholder="Describe Your Requirements*" required class="w-full pl-10 pr-4 py-2.5 bg-bgsec border border-bordercol rounded-md text-sm text-headtext focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all resize-none"></textarea>
                             </div>
                             <div class="flex items-start pb-1">
                                 <div class="flex items-center h-5">
@@ -529,9 +530,10 @@
                     <h2 class="text-2xl font-bold text-headtext tracking-tight">Ready to scale your outreach?</h2>
                     <p class="mt-2 text-paratext text-sm">Join 10,000+ businesses getting our weekly growth insights.</p>
                 </div>
-                <form class="flex w-full md:w-auto gap-2">
-                    <input type="email" placeholder="Enter your work email" class="bg-bgmain border border-bordercol text-headtext px-4 py-3 rounded-md focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary w-full md:w-72 text-sm transition-all" required>
-                    <button type="button" class="bg-primary hover:bg-hovercol hover:-translate-y-0.5 px-6 py-3 rounded-md font-bold text-sm transition-all shadow-[0_4px_14px_0_rgba(9,192,0,0.39)] text-btntext uppercase tracking-wide">Subscribe</button>
+                <form action="https://api.web3forms.com/submit" method="POST" class="flex w-full md:w-auto gap-2">
+                        <input type="hidden" name="access_key" value="bf9b4d31-592a-4405-9d10-020f99f9fd14">
+                    <input name="email" type="email" placeholder="Enter your work email" class="bg-bgmain border border-bordercol text-headtext px-4 py-3 rounded-md focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary w-full md:w-72 text-sm transition-all" required>
+                    <button type="submit" class="bg-primary hover:bg-hovercol hover:-translate-y-0.5 px-6 py-3 rounded-md font-bold text-sm transition-all shadow-[0_4px_14px_0_rgba(9,192,0,0.39)] text-btntext uppercase tracking-wide">Subscribe</button>
                 </form>
             </div>
             
@@ -571,6 +573,9 @@
         });
     </script>
 
+    
+
+
     <!-- Active Nav Highlight Script -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -580,6 +585,11 @@
             const allLinks = document.querySelectorAll('header a, #mobile-menu a');
             allLinks.forEach(link => {
                 if (link.getAttribute('href') === currentPath) {
+                    // Skip if it's a solid button to avoid invisible text
+                    if (link.classList.contains('bg-btnbg') || link.classList.contains('bg-primary')) {
+                        return; 
+                    }
+                    
                     link.classList.remove('text-headtext', 'text-btntext');
                     link.classList.add('text-primary');
                     
@@ -602,7 +612,7 @@
                     if (mobileDetails) {
                         mobileDetails.setAttribute('open', '');
                         const summaryLink = mobileDetails.querySelector('summary a');
-                        if (summaryLink) {
+                        if (summaryLink && !summaryLink.classList.contains('bg-btnbg')) {
                             summaryLink.classList.remove('text-btntext', 'text-headtext');
                             summaryLink.classList.add('text-primary');
                         }

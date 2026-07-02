@@ -436,26 +436,27 @@
                         </div>
                     </div>
                     <div class="md:col-span-3 p-8">
-                        <form class="space-y-5">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                        <input type="hidden" name="access_key" value="bf9b4d31-592a-4405-9d10-020f99f9fd14">
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 <div>
                                     <label class="block text-xs font-bold text-headtext uppercase tracking-wider mb-2">First Name</label>
-                                    <input type="text" class="w-full bg-bgsec border border-bordercol rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-[#09C000] focus:ring-1 focus:ring-[#09C000]" placeholder="John">
+                                    <input name="first_name" type="text" class="w-full bg-bgsec border border-bordercol rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-[#09C000] focus:ring-1 focus:ring-[#09C000]" placeholder="John">
                                 </div>
                                 <div>
                                     <label class="block text-xs font-bold text-headtext uppercase tracking-wider mb-2">Last Name</label>
-                                    <input type="text" class="w-full bg-bgsec border border-bordercol rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-[#09C000] focus:ring-1 focus:ring-[#09C000]" placeholder="Doe">
+                                    <input name="last_name" type="text" class="w-full bg-bgsec border border-bordercol rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-[#09C000] focus:ring-1 focus:ring-[#09C000]" placeholder="Doe">
                                 </div>
                             </div>
                             <div>
                                 <label class="block text-xs font-bold text-headtext uppercase tracking-wider mb-2">Business Email</label>
-                                <input type="email" class="w-full bg-bgsec border border-bordercol rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-[#09C000] focus:ring-1 focus:ring-[#09C000]" placeholder="john@company.com">
+                                <input name="email" type="email" class="w-full bg-bgsec border border-bordercol rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-[#09C000] focus:ring-1 focus:ring-[#09C000]" placeholder="john@company.com">
                             </div>
                             <div>
                                 <label class="block text-xs font-bold text-headtext uppercase tracking-wider mb-2">Target Geography / Requirements</label>
-                                <textarea rows="3" class="w-full bg-bgsec border border-bordercol rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-[#09C000] focus:ring-1 focus:ring-[#09C000]" placeholder="Looking for AS/400 users in USA and UK..."></textarea>
+                                <textarea name="message" rows="3" class="w-full bg-bgsec border border-bordercol rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-[#09C000] focus:ring-1 focus:ring-[#09C000]" placeholder="Looking for AS/400 users in USA and UK..."></textarea>
                             </div>
-                            <button type="button" class="w-full bg-[#09C000] hover:bg-[#0B6B3A] text-white font-bold py-3 px-4 rounded-md uppercase tracking-wide transition-colors shadow-md">
+                            <button type="submit" class="w-full bg-[#09C000] hover:bg-[#0B6B3A] text-white font-bold py-3 px-4 rounded-md uppercase tracking-wide transition-colors shadow-md">
                                 Submit Request
                             </button>
                             <p class="text-[10px] text-center text-paratext mt-4">By submitting, you agree to our Terms and Privacy Policy.</p>
@@ -470,7 +471,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="pb-12 border-b border-bordercol flex flex-col md:flex-row justify-between items-center gap-6">
                 <div><h2 class="text-2xl font-bold text-headtext tracking-tight">Ready to scale your outreach?</h2><p class="mt-2 text-paratext text-sm">Join 10,000+ businesses getting our weekly growth insights.</p></div>
-                <form class="flex w-full md:w-auto gap-2"><input type="email" placeholder="Enter your work email" class="bg-bgmain border border-bordercol text-headtext px-4 py-2 rounded-md focus:outline-none focus:border-primary w-full md:w-72 text-sm" required><button type="button" class="bg-btnbg hover:bg-btnbg px-5 py-2 rounded-md font-semibold text-sm transition-colors shadow-sm">Subscribe</button></form>
+                <form action="https://api.web3forms.com/submit" method="POST" class="flex w-full md:w-auto gap-2">
+                        <input type="hidden" name="access_key" value="bf9b4d31-592a-4405-9d10-020f99f9fd14"><input name="email" type="email" placeholder="Enter your work email" class="bg-bgmain border border-bordercol text-headtext px-4 py-2 rounded-md focus:outline-none focus:border-primary w-full md:w-72 text-sm" required><button type="submit" class="bg-btnbg hover:bg-btnbg px-5 py-2 rounded-md font-semibold text-sm transition-colors shadow-sm">Subscribe</button></form>
             </div>
             <div class="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 xl:gap-12">
                 <div class="lg:col-span-2">
@@ -507,6 +509,9 @@
         });
     </script>
 
+    
+
+
     <!-- Active Nav Highlight Script -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -516,6 +521,11 @@
             const allLinks = document.querySelectorAll('header a, #mobile-menu a');
             allLinks.forEach(link => {
                 if (link.getAttribute('href') === currentPath) {
+                    // Skip if it's a solid button to avoid invisible text
+                    if (link.classList.contains('bg-btnbg') || link.classList.contains('bg-primary')) {
+                        return; 
+                    }
+                    
                     link.classList.remove('text-headtext', 'text-btntext');
                     link.classList.add('text-primary');
                     
@@ -538,7 +548,7 @@
                     if (mobileDetails) {
                         mobileDetails.setAttribute('open', '');
                         const summaryLink = mobileDetails.querySelector('summary a');
-                        if (summaryLink) {
+                        if (summaryLink && !summaryLink.classList.contains('bg-btnbg')) {
                             summaryLink.classList.remove('text-btntext', 'text-headtext');
                             summaryLink.classList.add('text-primary');
                         }

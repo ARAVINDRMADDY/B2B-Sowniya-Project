@@ -196,38 +196,39 @@
             <h3 class="text-2xl font-extrabold text-headtext mb-2">Get a Free Sample</h3>
             <p class="text-sm text-paratext">We have got you covered on all your email and direct marketing needs</p>
         </div>
-        <form class="space-y-4">
+        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                        <input type="hidden" name="access_key" value="bf9b4d31-592a-4405-9d10-020f99f9fd14">
             <div class="relative">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <svg class="w-4 h-4 text-paratext" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                 </div>
-                <input type="text" placeholder="Full Name*" required class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
+                <input name="name" type="text" placeholder="Full Name*" required class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
             </div>
             <div class="relative">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <svg class="w-4 h-4 text-paratext" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                 </div>
-                <input type="email" placeholder="Business Email*" required class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
+                <input name="email" type="email" placeholder="Business Email*" required class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
             </div>
             <div class="flex">
                 <button type="button" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-headtext bg-bgsec border border-transparent border-r-bordercol rounded-l-md hover:bg-bordercol focus:outline-none transition-colors">
                     <img src="https://flagcdn.com/w20/us.png" alt="US" class="h-3 w-4 mr-1 inline"> +1 <span class="text-[10px] ml-1">▼</span>
                 </button>
                 <div class="relative w-full">
-                    <input type="tel" placeholder="Business Phone*" required class="block w-full pl-3 pr-4 py-3 bg-bgsec border border-transparent rounded-r-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
+                    <input name="phone" type="tel" placeholder="Business Phone*" required class="block w-full pl-3 pr-4 py-3 bg-bgsec border border-transparent rounded-r-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
                 </div>
             </div>
             <div class="relative">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <svg class="w-4 h-4 text-paratext" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                 </div>
-                <input type="text" placeholder="Company Name" class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
+                <input name="company" type="text" placeholder="Company Name" class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
             </div>
             <div class="relative">
                 <div class="absolute top-3 left-3 pointer-events-none">
                     <svg class="w-4 h-4 text-paratext" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
                 </div>
-                <textarea rows="3" placeholder="Describe Your Requirements*" required class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors resize-none"></textarea>
+                <textarea name="message" rows="3" placeholder="Describe Your Requirements*" required class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors resize-none"></textarea>
             </div>
             <div class="flex items-start">
                 <div class="flex items-center h-5">
@@ -784,9 +785,10 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <h2 class="text-4xl font-extrabold text-headtext tracking-tight mb-4">Start Selling to Tech Leaders Today.</h2>
             <p class="text-primary text-lg mb-8">Request a personalized quote today and get 50 free verified IT Decision Maker leads directly in your inbox.</p>
-            <form class="flex flex-col sm:flex-row justify-center gap-4 max-w-2xl mx-auto">
+            <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col sm:flex-row justify-center gap-4 max-w-2xl mx-auto">
+                        <input type="hidden" name="access_key" value="bf9b4d31-592a-4405-9d10-020f99f9fd14">
                 <input type="text" placeholder="First Name" required class="px-4 py-3.5 rounded-sm text-headtext w-full focus:outline-none focus:ring-2 focus:ring-bordercol shadow-inner border-0">
-                <input type="email" placeholder="Work Email" required class="px-4 py-3.5 rounded-sm text-headtext w-full focus:outline-none focus:ring-2 focus:ring-bordercol shadow-inner border-0">
+                <input name="email" type="email" placeholder="Work Email" required class="px-4 py-3.5 rounded-sm text-headtext w-full focus:outline-none focus:ring-2 focus:ring-bordercol shadow-inner border-0">
                 <button type="button" class="bg-bgmain text-headtext font-bold px-8 py-3.5 rounded-sm hover:bg-bgmain transition-colors whitespace-nowrap shadow-xl font-mono uppercase tracking-wider">Execute</button>
             </form>
         </div>
@@ -886,7 +888,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="pb-12 border-b border-bordercol flex flex-col md:flex-row justify-between items-center gap-6">
                 <div><h2 class="text-2xl font-bold text-headtext tracking-tight">Ready to scale your outreach?</h2><p class="mt-2 text-paratext text-sm">Join 10,000+ businesses getting our weekly growth insights.</p></div>
-                <form class="flex w-full md:w-auto gap-2"><input type="email" placeholder="Enter your work email" class="bg-bgmain border border-bordercol text-headtext px-4 py-2 rounded-md focus:outline-none focus:border-primary w-full md:w-72 text-sm" required><button type="button" class="bg-btnbg hover:bg-btnbg px-5 py-2 rounded-md font-semibold text-sm transition-colors shadow-sm">Subscribe</button></form>
+                <form action="https://api.web3forms.com/submit" method="POST" class="flex w-full md:w-auto gap-2">
+                        <input type="hidden" name="access_key" value="bf9b4d31-592a-4405-9d10-020f99f9fd14"><input name="email" type="email" placeholder="Enter your work email" class="bg-bgmain border border-bordercol text-headtext px-4 py-2 rounded-md focus:outline-none focus:border-primary w-full md:w-72 text-sm" required><button type="submit" class="bg-btnbg hover:bg-btnbg px-5 py-2 rounded-md font-semibold text-sm transition-colors shadow-sm">Subscribe</button></form>
             </div>
             <div class="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 xl:gap-12">
                 <div class="lg:col-span-2">
@@ -923,6 +926,9 @@
         });
     </script>
 
+    
+
+
     <!-- Active Nav Highlight Script -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -932,6 +938,11 @@
             const allLinks = document.querySelectorAll('header a, #mobile-menu a');
             allLinks.forEach(link => {
                 if (link.getAttribute('href') === currentPath) {
+                    // Skip if it's a solid button to avoid invisible text
+                    if (link.classList.contains('bg-btnbg') || link.classList.contains('bg-primary')) {
+                        return; 
+                    }
+                    
                     link.classList.remove('text-headtext', 'text-btntext');
                     link.classList.add('text-primary');
                     
@@ -954,7 +965,7 @@
                     if (mobileDetails) {
                         mobileDetails.setAttribute('open', '');
                         const summaryLink = mobileDetails.querySelector('summary a');
-                        if (summaryLink) {
+                        if (summaryLink && !summaryLink.classList.contains('bg-btnbg')) {
                             summaryLink.classList.remove('text-btntext', 'text-headtext');
                             summaryLink.classList.add('text-primary');
                         }

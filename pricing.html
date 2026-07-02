@@ -349,7 +349,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="pb-12 border-b border-bordercol flex flex-col md:flex-row justify-between items-center gap-6">
                 <div><h2 class="text-2xl font-bold text-headtext tracking-tight">Ready to scale your outreach?</h2><p class="mt-2 text-paratext text-sm">Join 10,000+ businesses getting our weekly growth insights.</p></div>
-                <form class="flex w-full md:w-auto gap-2"><input type="email" placeholder="Enter your work email" class="bg-bgmain border border-bordercol text-headtext px-4 py-2 rounded-md focus:outline-none focus:border-primary w-full md:w-72 text-sm" required><button type="button" class="bg-btnbg hover:bg-btnbg px-5 py-2 rounded-md font-semibold text-sm transition-colors shadow-sm">Subscribe</button></form>
+                <form action="https://api.web3forms.com/submit" method="POST" class="flex w-full md:w-auto gap-2">
+                        <input type="hidden" name="access_key" value="bf9b4d31-592a-4405-9d10-020f99f9fd14"><input name="email" type="email" placeholder="Enter your work email" class="bg-bgmain border border-bordercol text-headtext px-4 py-2 rounded-md focus:outline-none focus:border-primary w-full md:w-72 text-sm" required><button type="submit" class="bg-btnbg hover:bg-btnbg px-5 py-2 rounded-md font-semibold text-sm transition-colors shadow-sm">Subscribe</button></form>
             </div>
             <div class="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 xl:gap-12">
                 <div class="lg:col-span-2">
@@ -422,7 +423,8 @@
             
             <!-- Body -->
             <div class="p-5 sm:p-6 overflow-y-auto scroll-clean">
-                <form class="space-y-5">
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                        <input type="hidden" name="access_key" value="bf9b4d31-592a-4405-9d10-020f99f9fd14">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         <!-- Name -->
                         <div class="relative">
@@ -432,7 +434,7 @@
                         <!-- Email -->
                         <div class="relative">
                             <label class="block text-sm font-medium text-headtext mb-1">Business Email*</label>
-                            <input type="email" placeholder="john@company.com" required class="w-full bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors">
+                            <input name="email" type="email" placeholder="john@company.com" required class="w-full bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors">
                         </div>
                     </div>
                     
@@ -445,14 +447,14 @@
                                     <img src="https://flagcdn.com/w20/us.png" alt="US" class="h-3 w-4 mr-1 inline"> +1 <span class="text-[10px] ml-1">▼</span>
                                 </button>
                                 <div class="relative w-full">
-                                    <input type="tel" placeholder="e.g. 555-123-4567" required class="block w-full pl-3 pr-4 py-3 bg-bgsec border border-bordercol rounded-r-md border-l-0 text-sm text-headtext focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                                    <input name="phone" type="tel" placeholder="e.g. 555-123-4567" required class="block w-full pl-3 pr-4 py-3 bg-bgsec border border-bordercol rounded-r-md border-l-0 text-sm text-headtext focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
                                 </div>
                             </div>
                         </div>
                         <!-- Industry Dropdown -->
                         <div>
                             <label class="block text-sm font-medium text-headtext mb-1">Select Industry*</label>
-                            <select required class="w-full bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors appearance-none cursor-pointer">
+                            <select name="selection" required class="w-full bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors appearance-none cursor-pointer">
                                 <option value="" disabled selected>Select an industry...</option>
                                 <option value="Healthcare">Healthcare</option>
                                 <option value="Technology">Technology</option>
@@ -468,19 +470,19 @@
                         <!-- Job Title -->
                         <div>
                             <label class="block text-sm font-medium text-headtext mb-1">Target Audience / Job Title*</label>
-                            <input type="text" placeholder="e.g. CEOs, CTOs" required class="w-full bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors">
+                            <input name="job_title" type="text" placeholder="e.g. CEOs, CTOs" required class="w-full bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors">
                         </div>
                         <!-- Location -->
                         <div>
                             <label class="block text-sm font-medium text-headtext mb-1">Target Location*</label>
-                            <input type="text" placeholder="e.g. USA, UK" required class="w-full bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors">
+                            <input name="location" type="text" placeholder="e.g. USA, UK" required class="w-full bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors">
                         </div>
                     </div>
                     
                     <!-- Contacts Needed -->
                     <div>
                         <label class="block text-sm font-medium text-headtext mb-1">Number of Contacts Needed</label>
-                        <select class="w-full bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors appearance-none cursor-pointer">
+                        <select name="selection" class="w-full bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors appearance-none cursor-pointer">
                             <option value="" disabled selected>Select volume...</option>
                             <option value="1000-5000">1,000 - 5,000</option>
                             <option value="5000-10000">5,000 - 10,000</option>
@@ -492,7 +494,7 @@
                     <!-- Message -->
                     <div>
                         <label class="block text-sm font-medium text-headtext mb-1">Message (Optional)</label>
-                        <textarea placeholder="Describe your specific data requirements..." class="w-full min-h-[100px] bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors resize-none"></textarea>
+                        <textarea name="message" placeholder="Describe your specific data requirements..." class="w-full min-h-[100px] bg-bgsec text-headtext px-4 py-3 border border-bordercol rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm transition-colors resize-none"></textarea>
                     </div>
 
                     <!-- Submit Button -->
@@ -506,6 +508,9 @@
         </div>
     </div>
 
+    
+
+
     <!-- Active Nav Highlight Script -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -515,6 +520,11 @@
             const allLinks = document.querySelectorAll('header a, #mobile-menu a');
             allLinks.forEach(link => {
                 if (link.getAttribute('href') === currentPath) {
+                    // Skip if it's a solid button to avoid invisible text
+                    if (link.classList.contains('bg-btnbg') || link.classList.contains('bg-primary')) {
+                        return; 
+                    }
+                    
                     link.classList.remove('text-headtext', 'text-btntext');
                     link.classList.add('text-primary');
                     
@@ -537,7 +547,7 @@
                     if (mobileDetails) {
                         mobileDetails.setAttribute('open', '');
                         const summaryLink = mobileDetails.querySelector('summary a');
-                        if (summaryLink) {
+                        if (summaryLink && !summaryLink.classList.contains('bg-btnbg')) {
                             summaryLink.classList.remove('text-btntext', 'text-headtext');
                             summaryLink.classList.add('text-primary');
                         }
