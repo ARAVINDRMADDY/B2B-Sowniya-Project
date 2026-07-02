@@ -5,438 +5,465 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Decision Makers Email List | B2BLeadNex</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+                <script>
         tailwind.config = {
-            theme: { extend: { colors: { midnight: { 800: '#112240', 900: '#0A192F', 950: '#040B16', } } } }
+            theme: { 
+                extend: { 
+                    colors: { 
+                        primary: '#09C000',
+                        secondary: '#0B6B3A',
+                        bgmain: '#FFFFFF',
+                        bgsec: '#F8F8F8',
+                        bordercol: '#E5E7EB',
+                        headtext: '#222222',
+                        paratext: '#666666',
+                        btnbg: '#09C000',
+                        btntext: '#FFFFFF',
+                        hovercol: '#2CCB1F',
+                    } 
+                } 
+            }
         }
     </script>
     <style>
         .scroll-clean::-webkit-scrollbar { width: 6px; }
-        .scroll-clean::-webkit-scrollbar-track { background: #f1f5f9; } 
-        .scroll-clean::-webkit-scrollbar-thumb { background: #dc2626; border-radius: 4px; } 
-        .scroll-clean::-webkit-scrollbar-thumb:hover { background: #991b1b; } 
-        .accordion-arrow::after { content: ''; display: inline-block; width: 6px; height: 6px; border-bottom: 2px solid #6b7280; border-right: 2px solid #6b7280; transform: rotate(45deg); transition: transform 0.2s; }
+        .scroll-clean::-webkit-scrollbar-track { background: #F8F8F8; } 
+        .scroll-clean::-webkit-scrollbar-thumb { background: #09C000; border-radius: 4px; } 
+        .scroll-clean::-webkit-scrollbar-thumb:hover { background: #0B6B3A; } 
+        .accordion-arrow::after { content: ''; display: inline-block; width: 6px; height: 6px; border-bottom: 2px solid #666666; border-right: 2px solid #666666; transform: rotate(45deg); transition: transform 0.2s; }
         details[open] > summary .accordion-arrow::after { transform: rotate(-135deg); }
-        .accordion-plus::after { content: ''; display: inline-block; width: 8px; height: 8px; background: linear-gradient(#6b7280,#6b7280), linear-gradient(#6b7280,#6b7280); background-position: center; background-size: 100% 2px, 2px 100%; background-repeat: no-repeat; transition: transform 0.2s; }
+        .accordion-plus::after { content: ''; display: inline-block; width: 8px; height: 8px; background: linear-gradient(#666666,#666666), linear-gradient(#666666,#666666); background-position: center; background-size: 100% 2px, 2px 100%; background-repeat: no-repeat; transition: transform 0.2s; }
         details[open] > summary .accordion-plus::after { transform: rotate(45deg); }
-        .faq-arrow::after { content: '+'; display: inline-block; font-size: 1.5rem; font-weight: 300; transition: transform 0.3s; color: #ef4444; }
+        .faq-arrow::after { content: '+'; display: inline-block; font-size: 1.5rem; font-weight: 300; transition: transform 0.3s; color: #09C000; }
         details[open] > summary .faq-arrow::after { transform: rotate(45deg); }
-        .cyber-grid { background-image: linear-gradient(rgba(220, 38, 38, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(220, 38, 38, 0.05) 1px, transparent 1px); background-size: 30px 30px; }
+        .cyber-grid { background-image: linear-gradient(rgba(9, 192, 0, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(9, 192, 0, 0.05) 1px, transparent 1px); background-size: 30px 30px; }
         .code-snippet { font-family: 'Courier New', Courier, monospace; }
-        .glow-box { box-shadow: 0 0 20px rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.3); }
+        .glow-box { box-shadow: 0 0 20px rgba(9, 192, 0, 0.15); border: 1px solid rgba(9, 192, 0, 0.3); }
     </style>
 </head>
-<body class="bg-midnight-950 flex flex-col min-h-screen font-sans text-gray-200">
+<body class="bg-bgmain flex flex-col min-h-screen font-sans text-paratext">
 
     <header class="shadow-md sticky top-0 z-50 w-full flex flex-col">
-        <div class="hidden lg:flex bg-midnight-900 h-11 text-xs text-gray-300 relative w-full">
-            <div class="absolute left-0 top-0 h-full bg-red-600 w-[35%] [clip-path:polygon(0_0,100%_0,95%_100%,0_100%)] flex items-center justify-start pl-8 z-10 font-bold text-white shadow-lg">
+        <div class="hidden lg:flex bg-bgmain h-11 text-xs text-paratext relative w-full">
+            <div class="absolute left-0 top-0 h-full bg-btnbg w-[35%] [clip-path:polygon(0_0,100%_0,95%_100%,0_100%)] flex items-center justify-start pl-8 z-10 font-bold text-btntext shadow-lg">
                 <span class="mr-4 tracking-wide">Follow Us:</span>
-                <a href="#" class="mr-3 hover:text-midnight-950 transition"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
-                <a href="#" class="mr-3 hover:text-midnight-950 transition"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/></svg></a>
-                <a href="#" class="mr-3 hover:text-midnight-950 transition"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
+                <a href="#" class="mr-3 hover:text-hovercol transition"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                <a href="#" class="mr-3 hover:text-hovercol transition"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/></svg></a>
+                <a href="#" class="mr-3 hover:text-hovercol transition"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
             </div>
             <div class="flex-1 flex justify-end items-center px-8 space-x-8 z-0 font-medium">
-                <span class="flex items-center hover:text-white transition cursor-default"><svg class="w-3.5 h-3.5 mr-2 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> Bengaluru, India</span>
-                <a href="mailto:sowmyashetty1227@gmail.com" class="flex items-center hover:text-white transition"><svg class="w-3.5 h-3.5 mr-2 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> sowmyashetty1227@gmail.com</a>
-                <a href="tel:+917760747212" class="flex items-center hover:text-white transition"><svg class="w-3.5 h-3.5 mr-2 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg> +91 7760747212</a>
+                <span class="flex items-center hover:text-headtext transition cursor-default"><svg class="w-3.5 h-3.5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> Bengaluru, India</span>
+                <a href="mailto:info@b2bleadnex.com" class="flex items-center hover:text-headtext transition"><svg class="w-3.5 h-3.5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> info@b2bleadnex.com</a>
+                <a href="tel:+917760747212" class="flex items-center hover:text-headtext transition"><svg class="w-3.5 h-3.5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg> +91 7760747212</a>
             </div>
         </div>
 
-          <div class="bg-white w-full border-b border-gray-200">
+          <div class="bg-bgmain w-full border-b border-bordercol">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
                     <div class="flex-1 flex justify-start items-center">
                         <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center">
-                            <span class="text-blue-600">B2BLead</span><span class="text-blue-500">Nex</span>
+                            <span class="text-primary">B2BLead</span><span class="text-primary">Nex</span>
                         </a>
                     </div>
                     
                     <nav class="hidden lg:flex justify-center space-x-6 items-center h-full">
-                        <a href="index.html" class="text-gray-800 hover:text-blue-600 font-bold text-sm transition-colors">Home</a>
-                        <a href="about.html" class="text-gray-800 hover:text-blue-600 font-bold text-sm transition-colors">About Us</a>
+                        <a href="index.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors">Home</a>
+                        <a href="about.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors">About Us</a>
                         
-                        <div class="relative group h-full flex items-center">
-                            <button class="text-gray-800 hover:text-blue-600 font-bold text-sm flex items-center transition-colors h-full">Data Solutions <svg class="w-3 h-3 ml-1 text-gray-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-                            <div class="absolute left-1/2 transform -translate-x-1/2 top-full w-[800px] bg-white shadow-2xl invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50 border-t-2 border-blue-600 rounded-b-lg overflow-hidden">
-                                <div class="flex relative">
-                                    <div class="absolute inset-0 left-1/3 w-2/3 flex flex-col items-center justify-center text-gray-300 pointer-events-none z-0">
-                                        <svg class="w-16 h-16 mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-                                        <p class="text-sm font-semibold tracking-wider">HOVER A CATEGORY TO EXPLORE</p>
-                                    </div>
-                                    <div class="w-1/3 bg-gray-50 flex flex-col border-r border-gray-100 z-10 py-4">
-                                        <div class="group/tab">
-                                            <button class="w-full text-left px-6 py-4 font-bold text-sm text-gray-700 border-l-2 border-transparent hover:bg-white hover:border-blue-600 hover:text-blue-600 transition-all flex justify-between items-center">Healthcare <svg class="w-4 h-4 opacity-0 group-hover/tab:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
-                                            <div class="absolute left-1/3 top-0 w-2/3 h-full bg-white p-8 grid grid-cols-2 gap-x-4 gap-y-4 content-start z-20 invisible opacity-0 group-hover/tab:visible group-hover/tab:opacity-100 transition-all duration-300">
-                                                <a href="physician-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">Physician Email List</a>
-                                                <a href="cardiologist-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">Cardiologists Email List</a>
-                                                <a href="dentist-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">Dentist Email List</a>
-                                                <a href="nurses-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">Nurses Email List</a>
-                                                <a href="hospital-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">Hospital Email Lists</a>
-                                            </div>
-                                        </div>
-                                        <div class="group/tab">
-                                            <button class="w-full text-left px-6 py-4 font-bold text-sm text-gray-700 border-l-2 border-transparent hover:bg-white hover:border-blue-600 hover:text-blue-600 transition-all flex justify-between items-center">Technology <svg class="w-4 h-4 opacity-0 group-hover/tab:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
-                                            <div class="absolute left-1/3 top-0 w-2/3 h-full bg-white p-8 grid grid-cols-2 gap-x-4 gap-y-4 content-start z-20 invisible opacity-0 group-hover/tab:visible group-hover/tab:opacity-100 transition-all duration-300">
-                                                <a href="it-decision-makers-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">IT Decision Makers Email List</a> 
-                                                <a href="technology-users-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">Technology Users List</a>
-                                            </div>
-                                        </div>
-                                        <div class="group/tab">
-                                            <button class="w-full text-left px-6 py-4 font-bold text-sm text-gray-700 border-l-2 border-transparent hover:bg-white hover:border-blue-600 hover:text-blue-600 transition-all flex justify-between items-center">International <svg class="w-4 h-4 opacity-0 group-hover/tab:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
-                                            <div class="absolute left-1/3 top-0 w-2/3 h-full bg-white p-8 grid grid-cols-2 gap-x-4 gap-y-4 content-start z-20 invisible opacity-0 group-hover/tab:visible group-hover/tab:opacity-100 transition-all duration-300">
-                                                <a href="usa-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">USA List</a> 
-                                                <a href="canada-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">Canada List</a> 
-                                                <a href="uk-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">UK List</a> 
-                                                <a href="australia-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">Australia List</a> 
-                                                <a href="germany-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">Germany List</a>
-                                            </div>
-                                        </div>
-                                        <div class="group/tab">
-                                            <button class="w-full text-left px-6 py-4 font-bold text-sm text-gray-700 border-l-2 border-transparent hover:bg-white hover:border-blue-600 hover:text-blue-600 transition-all flex justify-between items-center">C-level Professionals <svg class="w-4 h-4 opacity-0 group-hover/tab:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
-                                            <div class="absolute left-1/3 top-0 w-2/3 h-full bg-white p-8 grid grid-cols-2 gap-x-4 gap-y-4 content-start z-20 invisible opacity-0 group-hover/tab:visible group-hover/tab:opacity-100 transition-all duration-300">
-                                                <a href="ceo-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">CEO Email List</a> 
-                                                <a href="cfo-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">CFO Email List</a> 
-                                                <a href="marketing-executives-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">Marketing Executives Email List</a> 
-                                                <a href="cto-list.html" class="text-sm font-semibold text-gray-600 hover:text-blue-600 hover:translate-x-1 transition-transform">CTO Email List</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="group relative flex items-center h-full cursor-pointer">
+                            <a href="healthcare-list.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors flex items-center">Healthcare <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                            <div class="hidden group-hover:block absolute top-[calc(100%-0.5rem)] left-0 w-48 pt-2 z-50">
+                                <div class="bg-bgmain shadow-xl rounded-md border border-bordercol overflow-hidden py-1">
+                                    <a href="dentist-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Dentists Email List</a>
+                                    <a href="hospital-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Hospital Email List</a>
+                                    <a href="nurses-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Nurses Email List</a>
+                                    <a href="physician-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Physicians Email List</a>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="pricing.html" class="text-gray-800 hover:text-blue-600 font-bold text-sm transition-colors">Pricing</a>
-                        <a href="blog.html" class="text-gray-800 hover:text-blue-600 font-bold text-sm transition-colors">Blog</a>
+                        <a href="technology-list.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors">Technology</a>
+                        
+                        <div class="group relative flex items-center h-full cursor-pointer">
+                            <a href="professionals-data-list.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors flex items-center">Professionals Data <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                            <div class="hidden group-hover:block absolute top-[calc(100%-0.5rem)] left-0 w-48 pt-2 z-50">
+                                <div class="bg-bgmain shadow-xl rounded-md border border-bordercol overflow-hidden py-1">
+                                    <a href="ceo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CEO Email List</a>
+                                    <a href="cfo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CFO Email List</a>
+                                    <a href="cmo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CMO Email List</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group relative flex items-center h-full cursor-pointer">
+                            <a href="industry-wise-data-list.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors flex items-center">Industry Wise Data <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                            <div class="hidden group-hover:block absolute top-[calc(100%-0.5rem)] left-0 w-56 pt-2 z-50">
+                                <div class="bg-bgmain shadow-xl rounded-md border border-bordercol overflow-hidden py-1">
+                                    <a href="automotive-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Automotive Industry</a>
+                                    <a href="banking-finance-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Banking & Finance Industry</a>
+                                    <a href="oil-gas-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Oil & Gas Industry</a>
+                                    <a href="real-estate-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Real Estate Industry</a>
+                                    <a href="manufacturing-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Manufacturing Industry</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="pricing.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors">Pricing</a>
                     </nav>
 
                     <div class="flex-1 flex justify-end items-center space-x-5">
-                        <a href="contact-us.html" class="hidden lg:flex bg-amber-500 text-navy-950 px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-amber-600 transition-colors shadow-md items-center"><svg class="w-3.5 h-3.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg> Contact Us</a>
-                        <button id="mobile-menu-btn" class="lg:hidden text-gray-800 hover:text-blue-600 focus:outline-none p-2 ml-4"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /><path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></button>
+                        <a href="contact-us.html" class="hidden lg:flex bg-btnbg text-btntext px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-btnbg transition-colors shadow-md items-center"><svg class="w-3.5 h-3.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg> Contact Us</a>
+                        <button id="mobile-menu-btn" class="lg:hidden text-headtext hover:text-primary focus:outline-none p-2 ml-4"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /><path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl absolute top-full w-full max-h-[85vh] overflow-y-auto pb-6">
+        <div id="mobile-menu" class="hidden lg:hidden bg-bgmain border-t border-bordercol shadow-xl absolute top-full w-full max-h-[85vh] overflow-y-auto pb-6">
             <div class="px-4 py-2 space-y-1">
-                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-bold text-gray-800 hover:text-blue-600 hover:bg-blue-50 transition-colors">Home</a>
-                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-bold text-gray-800 hover:text-blue-600 hover:bg-blue-50 transition-colors">About Us</a>
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">Home</a>
+                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">About Us</a>
                 
-                <details class="group/mob-ds"><summary class="px-3 py-3 rounded-md text-base font-bold text-gray-800 hover:text-blue-600 hover:bg-blue-50 cursor-pointer list-none flex justify-between items-center transition-colors">Data Solutions <span class="accordion-arrow"></span></summary>
-                    <div class="pl-4 pr-2 pb-2 space-y-1 bg-gray-50 rounded-b">
-                        <details><summary class="px-3 py-2 text-sm font-bold text-gray-700 cursor-pointer list-none border-b border-gray-200 flex justify-between items-center hover:text-blue-600 transition-colors">Healthcare <span class="accordion-plus"></span></summary>
-                            <div class="pl-3 py-2 space-y-2 max-h-60 overflow-y-auto scroll-clean">
-                                <a href="physician-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Physician Email List</a>
-                                <a href="cardiologist-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Cardiologists Email List</a>
-                                <a href="dentist-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Dentist Email List</a>
-                                <a href="nurses-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Nurses Email List</a>
-                                <a href="hospital-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Hospital Email Lists</a>
-                            </div>
-                        </details>
-                        <details><summary class="px-3 py-2 text-sm font-bold text-gray-700 cursor-pointer list-none border-b border-gray-200 flex justify-between items-center hover:text-blue-600 transition-colors">Technology <span class="accordion-plus"></span></summary>
-                            <div class="pl-3 py-2 space-y-2 max-h-60 overflow-y-auto scroll-clean">
-                                <a href="it-decision-makers-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">IT Decision Makers Email List</a>
-                                <a href="technology-users-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Technology Users List</a>
-                            </div>
-                        </details>
-                        <details><summary class="px-3 py-2 text-sm font-bold text-gray-700 cursor-pointer list-none border-b border-gray-200 flex justify-between items-center hover:text-blue-600 transition-colors">International <span class="accordion-plus"></span></summary>
-                            <div class="pl-3 py-2 space-y-2 max-h-60 overflow-y-auto scroll-clean">
-                                <a href="usa-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">USA List</a>
-                                <a href="canada-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Canada List</a>
-                                <a href="uk-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">UK List</a>
-                                <a href="australia-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Australia List</a>
-                                <a href="germany-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Germany List</a>
-                            </div>
-                        </details>
-                        <details><summary class="px-3 py-2 text-sm font-bold text-gray-700 cursor-pointer list-none flex justify-between items-center hover:text-blue-600 transition-colors">C-level Professionals <span class="accordion-plus"></span></summary>
-                            <div class="pl-3 py-2 space-y-2 max-h-60 overflow-y-auto scroll-clean">
-                                <a href="ceo-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">CEO Email List</a>
-                                <a href="cfo-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">CFO Email List</a>
-                                <a href="marketing-executives-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Marketing Executives Email List</a>
-                                <a href="cto-list.html" class="block text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">CTO Email List</a>
-                            </div>
-                        </details>
+                <details class="group">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <a href="healthcare-list.html" class="flex-1">Healthcare</a>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-6 pb-2 space-y-1">
+                        <a href="dentist-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Dentists Email List</a>
+                        <a href="hospital-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Hospital Email List</a>
+                        <a href="nurses-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Nurses Email List</a>
+                        <a href="physician-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Physicians Email List</a>
+                    </div>
+                </details>
+
+                <a href="technology-list.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">Technology</a>
+                
+                <details class="group">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <a href="professionals-data-list.html" class="flex-1">Professionals Data</a>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-6 pb-2 space-y-1">
+                        <a href="ceo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CEO Email List</a>
+                        <a href="cfo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CFO Email List</a>
+                        <a href="cmo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CMO Email List</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <a href="industry-wise-data-list.html" class="flex-1">Industry Wise Data</a>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-6 pb-2 space-y-1">
+                        <a href="automotive-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Automotive Industry</a>
+                        <a href="banking-finance-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Banking & Finance Industry</a>
+                        <a href="oil-gas-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Oil & Gas Industry</a>
+                        <a href="real-estate-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Real Estate Industry</a>
+                        <a href="manufacturing-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Manufacturing Industry</a>
                     </div>
                 </details>
                 
-                <a href="pricing.html" class="block px-3 py-3 rounded-md text-base font-bold text-gray-800 hover:text-blue-600 hover:bg-blue-50 transition-colors">Pricing</a>
-                <a href="blog.html" class="block px-3 py-3 rounded-md text-base font-bold text-gray-800 hover:text-blue-600 hover:bg-blue-50 transition-colors">Blog</a>
-                <a href="contact-us.html" class="block mt-4 px-3 py-3 text-center rounded-full text-base font-bold uppercase tracking-wider bg-amber-500 text-navy-950 hover:bg-amber-600 transition-colors shadow-md">Contact Us</a>
+                <a href="pricing.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">Pricing</a>
+                <a href="contact-us.html" class="block mt-4 px-3 py-3 text-center rounded-full text-base font-bold uppercase tracking-wider bg-btnbg text-btntext hover:bg-btnbg transition-colors shadow-md">Contact Us</a>
             </div>
         </div>
     </header>
-    <section class="relative bg-midnight-950 pt-20 pb-28 lg:pt-32 lg:pb-36 overflow-hidden border-b border-midnight-900 cyber-grid">
-        <div class="absolute inset-0 bg-gradient-to-b from-midnight-950 via-transparent to-midnight-950"></div>
-        <div class="absolute top-1/4 right-0 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[100px] pointer-events-none -mr-32"></div>
-        
+    <section class="relative bg-bgmain pt-20 pb-28 lg:pt-32 lg:pb-36 overflow-hidden border-b border-bordercol cyber-grid">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-                <div class="lg:col-span-6 text-center lg:text-left">
-                    <div class="inline-flex items-center px-4 py-2 rounded-sm border border-red-900/50 bg-midnight-900/80 text-red-400 font-mono text-xs uppercase tracking-widest mb-6">
-                        <span class="w-2 h-2 bg-red-500 mr-2 animate-pulse rounded-sm"></span>
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                <div class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left">
+                    <div class="inline-flex items-center px-4 py-2 rounded-sm border border-primary/50 bg-bgmain/80 text-primary font-mono text-xs uppercase tracking-widest mb-6">
+                        <span class="w-2 h-2 bg-btnbg mr-2 animate-pulse rounded-sm"></span>
                         SYS_UPDATE // Q1 2026
                     </div>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
-                        Access <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600">3.4M+</span> Tech Decision Makers.
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-headtext tracking-tight leading-tight mb-6">
+                        Access <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">3.4M+</span> Tech Decision Makers.
                     </h1>
-                    <p class="text-lg text-gray-400 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                    <p class="text-lg text-paratext mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
                         Power your B2B sales with pristine contact data. Target CIOs, CTOs, and IT Directors by firmographics, tech stack, and budget. Guaranteed 95% deliverability.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#pricing" class="bg-red-600 text-white px-8 py-4 rounded-sm font-bold text-sm hover:bg-red-700 transition-colors shadow-lg shadow-red-900/20 flex items-center justify-center font-mono uppercase tracking-wider">
-                            > Execute Search
-                        </a>
-                        <a href="#sample" class="bg-midnight-900 border border-midnight-700 text-white px-8 py-4 rounded-sm font-bold text-sm hover:bg-midnight-800 transition-colors flex items-center justify-center font-mono uppercase tracking-wider">
-                            View Data Payload
-                        </a>
                     </div>
+                
+<div class="lg:col-span-5 relative mt-12 lg:mt-0">
+    <div class="bg-bgmain border border-bordercol rounded-xl shadow-2xl p-6 lg:p-8 relative z-20">
+        <div class="text-center mb-6">
+            <h3 class="text-2xl font-extrabold text-headtext mb-2">Get a Free Sample</h3>
+            <p class="text-sm text-paratext">We have got you covered on all your email and direct marketing needs</p>
+        </div>
+        <form class="space-y-4">
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg class="w-4 h-4 text-paratext" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                 </div>
+                <input type="text" placeholder="Full Name*" required class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
+            </div>
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg class="w-4 h-4 text-paratext" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <input type="email" placeholder="Business Email*" required class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
+            </div>
+            <div class="flex">
+                <button type="button" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-headtext bg-bgsec border border-transparent border-r-bordercol rounded-l-md hover:bg-bordercol focus:outline-none transition-colors">
+                    🇺🇸 +1
+                    <svg class="w-2.5 h-2.5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="relative w-full">
+                    <input type="tel" placeholder="Business Phone*" required class="block w-full pl-3 pr-4 py-3 bg-bgsec border border-transparent rounded-r-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg class="w-4 h-4 text-paratext" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                </div>
+                <input type="text" placeholder="Company Name" class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors">
+            </div>
+            <div class="relative">
+                <div class="absolute top-3 left-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-paratext" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                </div>
+                <textarea rows="3" placeholder="Describe Your Requirements*" required class="w-full pl-10 pr-4 py-3 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary focus:bg-bgmain transition-colors resize-none"></textarea>
+            </div>
+            <div class="flex items-start">
+                <div class="flex items-center h-5">
+                    <input id="newsletter" type="checkbox" checked class="w-4 h-4 bg-bgsec border-bordercol rounded focus:ring-primary text-primary accent-primary">
+                </div>
+                <label for="newsletter" class="ml-2 text-xs font-medium text-paratext">I would like to subscribe to your Newsletter.</label>
+            </div>
+            <button type="submit" class="w-full text-btntext bg-[#09C000] hover:bg-[#0B6B3A] focus:ring-4 focus:outline-none focus:ring-primary/50 font-bold rounded-md text-sm px-5 py-4 text-center transition-colors">
+                GET A FREE SAMPLE
+            </button>
+        </form>
+    </div>
+</div>
 
-                <div class="lg:col-span-6 relative perspective-1000 mt-10 lg:mt-0 hidden md:block">
-                    <div class="bg-midnight-950 border border-midnight-800 rounded-lg shadow-2xl overflow-hidden glow-box">
-                        <div class="bg-midnight-900 px-4 py-2 flex items-center border-b border-midnight-800">
-                            <div class="flex space-x-2">
-                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                            </div>
-                            <div class="mx-auto text-xs text-gray-500 font-mono">tech_leaders_query.exe</div>
-                        </div>
-                        <div class="p-6 font-mono text-sm code-snippet">
-                            <div class="text-gray-400 mb-2">> initializing connection to B2BLeadNex mainframe...</div>
-                            <div class="text-green-400 mb-4">> connection established. latency: 14ms</div>
-                            
-                            <div class="text-gray-300 mb-1">> RUN query --title="CIO" --tech_stack="AWS, Salesforce"</div>
-                            <div class="pl-4 border-l-2 border-midnight-800 mb-4">
-                                <div class="text-gray-500">Searching 3.4M+ records...</div>
-                                <div class="text-yellow-400">Scrubbing against DNC registries...</div>
-                                <div class="text-yellow-400">Validating SMTP status...</div>
-                            </div>
+            </div>
+        </div>
+    </section>
 
-                            <div class="text-green-400 font-bold mb-4">> SUCCESS: 14,208 matches found.</div>
-                            
-                            <div class="bg-midnight-900 border border-midnight-800 p-4 rounded text-gray-300">
-                                <div class="flex justify-between border-b border-midnight-800 pb-2 mb-2">
-                                    <span class="text-gray-500">Output Payload:</span>
-                                    <span class="text-red-400">Record 1 of 14k</span>
-                                </div>
-                                <div><span class="text-red-400">Name:</span> David Chen</div>
-                                <div><span class="text-red-400">Role:</span> Chief Information Officer</div>
-                                <div><span class="text-red-400">Email:</span> d.chen@enterprise-inc.com</div>
-                                <div><span class="text-red-400">Direct:</span> +1 (415) 555-****</div>
-                            </div>
-                            <div class="mt-4 flex items-center text-gray-400">
-                                <span>> _</span><span class="w-2 h-4 bg-red-500 inline-block ml-1 animate-pulse"></span>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Kryptonite Section -->
+    <section class="py-20 bg-bgmain border-t border-bordercol">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-5 mb-8 lg:mb-0">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0B6B3A] tracking-tight leading-tight">
+                        Our Professional Email List is the Kryptonite You Need to Engage with Influential Leads Successfully
+                    </h2>
+                </div>
+                <div class="lg:col-span-7 space-y-6 text-paratext leading-relaxed">
+                    <p>Put merely, C-suite executives are the torchbearers of their organizations. From overlooking day-to-day responsibilities to leading their employees towards a successful career, their plate remains full, 24x7. Punctuality and professionalism are paramount to these individuals, and to reach them; your marketing game must be top-notch. If you're looking for the solution that will help you seal the deal with them, Span Global Services' Professionals email marketing database is what you need.</p>
+                    <p>The professional sector of C-suite workers has been one of the sprawling ones in the USA. With over 2,100,000 top executives currently employed, this is a brimming window for marketers looking to engage with premium clientele. However, to reach such a niche audience and build a robust brand presence, you will need a highly-relevant C-level executives email list.</p>
+                    <p>That's where our expertly-collated professional contact database shines. Comprising 100% ethically-collected customer data from globally credible sources, our mailing database ensures that you receive genuine contact details...</p>
+                    <a href="#" class="inline-block mt-4 text-primary font-bold tracking-widest uppercase text-sm hover:text-hovercol transition-colors">READ MORE</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-midnight-900 border-b border-midnight-800">
+    <section class="py-24 bg-bgmain border-b border-bordercol">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-white tracking-tight mb-4">Target By <span class="text-red-500">Installed Technology Stack</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto text-lg">Stop pitching to companies that don't use your integrations. Filter our IT Decision Makers database by the specific software and hardware their companies deploy.</p>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-headtext tracking-tight mb-4">Target By <span class="text-primary">Installed Technology Stack</span></h2>
+                <p class="text-paratext max-w-2xl mx-auto text-lg">Stop pitching to companies that don't use your integrations. Filter our IT Decision Makers database by the specific software and hardware their companies deploy.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-midnight-950 rounded-xl border border-midnight-800 p-6 hover:border-red-900 transition-colors shadow-lg">
-                    <div class="flex items-center mb-4 pb-4 border-b border-midnight-800">
-                        <div class="w-10 h-10 rounded bg-midnight-900 flex items-center justify-center text-red-500 mr-3 border border-midnight-700">
+                <div class="bg-bgmain rounded-xl border border-bordercol p-6 hover:border-primary transition-colors shadow-lg">
+                    <div class="flex items-center mb-4 pb-4 border-b border-bordercol">
+                        <div class="w-10 h-10 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
                         </div>
-                        <h3 class="text-lg font-bold text-white">Cloud Infrastructure</h3>
+                        <h3 class="text-lg font-bold text-headtext">Cloud Infrastructure</h3>
                     </div>
                     <ul class="space-y-3">
-                        <li class="flex items-center justify-between text-sm text-gray-400">Amazon Web Services (AWS) <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">Microsoft Azure <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">Google Cloud Platform (GCP) <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">DigitalOcean / Linode <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">VMware / Citrix <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Amazon Web Services (AWS) <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Microsoft Azure <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Google Cloud Platform (GCP) <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">DigitalOcean / Linode <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">VMware / Citrix <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
                     </ul>
                 </div>
                 
-                <div class="bg-midnight-950 rounded-xl border border-midnight-800 p-6 hover:border-red-900 transition-colors shadow-lg">
-                    <div class="flex items-center mb-4 pb-4 border-b border-midnight-800">
-                        <div class="w-10 h-10 rounded bg-midnight-900 flex items-center justify-center text-red-500 mr-3 border border-midnight-700">
+                <div class="bg-bgmain rounded-xl border border-bordercol p-6 hover:border-primary transition-colors shadow-lg">
+                    <div class="flex items-center mb-4 pb-4 border-b border-bordercol">
+                        <div class="w-10 h-10 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                         </div>
-                        <h3 class="text-lg font-bold text-white">CRM & ERP Systems</h3>
+                        <h3 class="text-lg font-bold text-headtext">CRM & ERP Systems</h3>
                     </div>
                     <ul class="space-y-3">
-                        <li class="flex items-center justify-between text-sm text-gray-400">Salesforce <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">HubSpot / Marketo <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">SAP / Oracle NetSuite <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">Microsoft Dynamics <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">Zoho / Pipedrive <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Salesforce <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">HubSpot / Marketo <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">SAP / Oracle NetSuite <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Microsoft Dynamics <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Zoho / Pipedrive <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
                     </ul>
                 </div>
 
-                <div class="bg-midnight-950 rounded-xl border border-midnight-800 p-6 hover:border-red-900 transition-colors shadow-lg">
-                    <div class="flex items-center mb-4 pb-4 border-b border-midnight-800">
-                        <div class="w-10 h-10 rounded bg-midnight-900 flex items-center justify-center text-red-500 mr-3 border border-midnight-700">
+                <div class="bg-bgmain rounded-xl border border-bordercol p-6 hover:border-primary transition-colors shadow-lg">
+                    <div class="flex items-center mb-4 pb-4 border-b border-bordercol">
+                        <div class="w-10 h-10 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                         </div>
-                        <h3 class="text-lg font-bold text-white">Cybersecurity</h3>
+                        <h3 class="text-lg font-bold text-headtext">Cybersecurity</h3>
                     </div>
                     <ul class="space-y-3">
-                        <li class="flex items-center justify-between text-sm text-gray-400">CrowdStrike / SentinelOne <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">Palo Alto Networks <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">Okta / Duo Security <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">Fortinet / Cisco <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">Proofpoint <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">CrowdStrike / SentinelOne <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Palo Alto Networks <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Okta / Duo Security <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Fortinet / Cisco <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Proofpoint <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
                     </ul>
                 </div>
 
-                <div class="bg-midnight-950 rounded-xl border border-midnight-800 p-6 hover:border-red-900 transition-colors shadow-lg">
-                    <div class="flex items-center mb-4 pb-4 border-b border-midnight-800">
-                        <div class="w-10 h-10 rounded bg-midnight-900 flex items-center justify-center text-red-500 mr-3 border border-midnight-700">
+                <div class="bg-bgmain rounded-xl border border-bordercol p-6 hover:border-primary transition-colors shadow-lg">
+                    <div class="flex items-center mb-4 pb-4 border-b border-bordercol">
+                        <div class="w-10 h-10 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                         </div>
-                        <h3 class="text-lg font-bold text-white">DevOps & Data</h3>
+                        <h3 class="text-lg font-bold text-headtext">DevOps & Data</h3>
                     </div>
                     <ul class="space-y-3">
-                        <li class="flex items-center justify-between text-sm text-gray-400">Docker / Kubernetes <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">Snowflake / Databricks <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">MongoDB / PostgreSQL <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">GitHub / GitLab <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
-                        <li class="flex items-center justify-between text-sm text-gray-400">Datadog / Splunk <span class="w-2 h-2 rounded-full bg-green-500"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Docker / Kubernetes <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Snowflake / Databricks <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">MongoDB / PostgreSQL <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">GitHub / GitLab <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
+                        <li class="flex items-center justify-between text-sm text-paratext">Datadog / Splunk <span class="w-2 h-2 rounded-full bg-btnbg"></span></li>
                     </ul>
                 </div>
             </div>
             <div class="mt-10 text-center">
-                <a href="#" class="text-red-500 hover:text-red-400 font-bold text-sm inline-flex items-center transition-colors">
+                <a href="#" class="text-primary hover:text-primary font-bold text-sm inline-flex items-center transition-colors">
                     Download Full 500+ Technology Stack Dictionary <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-midnight-950 border-b border-midnight-900">
+    <section class="py-20 bg-bgmain border-b border-bordercol">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-white tracking-tight mb-4">Target the <span class="text-red-500">True Buyers</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto text-lg">Whether you sell top-down to the C-Suite or bottom-up to practitioners, we have the exact roles you need.</p>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-headtext tracking-tight mb-4">Target the <span class="text-primary">True Buyers</span></h2>
+                <p class="text-paratext max-w-2xl mx-auto text-lg">Whether you sell top-down to the C-Suite or bottom-up to practitioners, we have the exact roles you need.</p>
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
-                <div class="bg-midnight-900 p-6 rounded-lg border border-midnight-800 text-center hover:border-red-500 transition-colors group shadow">
-                    <h4 class="text-lg font-bold text-white group-hover:text-red-400 transition-colors">Chief Information Officer (CIO)</h4>
-                    <p class="text-xs text-gray-500 mt-2">Enterprise Strategy & Budgets</p>
+                <div class="bg-bgmain p-6 rounded-lg border border-bordercol text-center hover:border-primary transition-colors group shadow">
+                    <h4 class="text-lg font-bold text-headtext group-hover:text-primary transition-colors">Chief Information Officer (CIO)</h4>
+                    <p class="text-xs text-paratext mt-2">Enterprise Strategy & Budgets</p>
                 </div>
-                <div class="bg-midnight-900 p-6 rounded-lg border border-midnight-800 text-center hover:border-red-500 transition-colors group shadow">
-                    <h4 class="text-lg font-bold text-white group-hover:text-red-400 transition-colors">Chief Technology Officer (CTO)</h4>
-                    <p class="text-xs text-gray-500 mt-2">Engineering & Architecture</p>
+                <div class="bg-bgmain p-6 rounded-lg border border-bordercol text-center hover:border-primary transition-colors group shadow">
+                    <h4 class="text-lg font-bold text-headtext group-hover:text-primary transition-colors">Chief Technology Officer (CTO)</h4>
+                    <p class="text-xs text-paratext mt-2">Engineering & Architecture</p>
                 </div>
-                <div class="bg-midnight-900 p-6 rounded-lg border border-midnight-800 text-center hover:border-red-500 transition-colors group shadow">
-                    <h4 class="text-lg font-bold text-white group-hover:text-red-400 transition-colors">Chief Info Security Officer (CISO)</h4>
-                    <p class="text-xs text-gray-500 mt-2">Security & Compliance Buyers</p>
+                <div class="bg-bgmain p-6 rounded-lg border border-bordercol text-center hover:border-primary transition-colors group shadow">
+                    <h4 class="text-lg font-bold text-headtext group-hover:text-primary transition-colors">Chief Info Security Officer (CISO)</h4>
+                    <p class="text-xs text-paratext mt-2">Security & Compliance Buyers</p>
                 </div>
-                <div class="bg-midnight-900 p-6 rounded-lg border border-midnight-800 text-center hover:border-red-500 transition-colors group shadow">
-                    <h4 class="text-lg font-bold text-white group-hover:text-red-400 transition-colors">Vice President of IT</h4>
-                    <p class="text-xs text-gray-500 mt-2">Operational Execution</p>
+                <div class="bg-bgmain p-6 rounded-lg border border-bordercol text-center hover:border-primary transition-colors group shadow">
+                    <h4 class="text-lg font-bold text-headtext group-hover:text-primary transition-colors">Vice President of IT</h4>
+                    <p class="text-xs text-paratext mt-2">Operational Execution</p>
                 </div>
-                <div class="bg-midnight-900 p-6 rounded-lg border border-midnight-800 text-center hover:border-red-500 transition-colors group shadow">
-                    <h4 class="text-lg font-bold text-white group-hover:text-red-400 transition-colors">IT Director</h4>
-                    <p class="text-xs text-gray-500 mt-2">Department Level Purchasing</p>
+                <div class="bg-bgmain p-6 rounded-lg border border-bordercol text-center hover:border-primary transition-colors group shadow">
+                    <h4 class="text-lg font-bold text-headtext group-hover:text-primary transition-colors">IT Director</h4>
+                    <p class="text-xs text-paratext mt-2">Department Level Purchasing</p>
                 </div>
-                <div class="bg-midnight-900 p-6 rounded-lg border border-midnight-800 text-center hover:border-red-500 transition-colors group shadow">
-                    <h4 class="text-lg font-bold text-white group-hover:text-red-400 transition-colors">Director of Engineering</h4>
-                    <p class="text-xs text-gray-500 mt-2">Software & DevOps Tooling</p>
+                <div class="bg-bgmain p-6 rounded-lg border border-bordercol text-center hover:border-primary transition-colors group shadow">
+                    <h4 class="text-lg font-bold text-headtext group-hover:text-primary transition-colors">Director of Engineering</h4>
+                    <p class="text-xs text-paratext mt-2">Software & DevOps Tooling</p>
                 </div>
-                <div class="bg-midnight-900 p-6 rounded-lg border border-midnight-800 text-center hover:border-red-500 transition-colors group shadow">
-                    <h4 class="text-lg font-bold text-white group-hover:text-red-400 transition-colors">Network Administrator</h4>
-                    <p class="text-xs text-gray-500 mt-2">Hardware & Infrastructure Evaluators</p>
+                <div class="bg-bgmain p-6 rounded-lg border border-bordercol text-center hover:border-primary transition-colors group shadow">
+                    <h4 class="text-lg font-bold text-headtext group-hover:text-primary transition-colors">Network Administrator</h4>
+                    <p class="text-xs text-paratext mt-2">Hardware & Infrastructure Evaluators</p>
                 </div>
-                <div class="bg-midnight-900 p-6 rounded-lg border border-midnight-800 text-center hover:border-red-500 transition-colors group shadow">
-                    <h4 class="text-lg font-bold text-white group-hover:text-red-400 transition-colors">DevOps Manager</h4>
-                    <p class="text-xs text-gray-500 mt-2">Cloud & Pipeline Evaluators</p>
+                <div class="bg-bgmain p-6 rounded-lg border border-bordercol text-center hover:border-primary transition-colors group shadow">
+                    <h4 class="text-lg font-bold text-headtext group-hover:text-primary transition-colors">DevOps Manager</h4>
+                    <p class="text-xs text-paratext mt-2">Cloud & Pipeline Evaluators</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-midnight-900 border-b border-midnight-800">
+    <section class="py-16 bg-bgmain border-b border-bordercol">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-8">
-                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-midnight-950 flex items-center justify-center text-red-500 mr-3 border border-midnight-800"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg></div><span class="text-sm font-bold text-white">Verified B2B Email</span></div>
-                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-midnight-950 flex items-center justify-center text-red-500 mr-3 border border-midnight-800"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg></div><span class="text-sm font-bold text-white">Direct Dial Phone</span></div>
-                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-midnight-950 flex items-center justify-center text-red-500 mr-3 border border-midnight-800"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></div><span class="text-sm font-bold text-white">Installed Tech Stack</span></div>
-                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-midnight-950 flex items-center justify-center text-red-500 mr-3 border border-midnight-800"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><span class="text-sm font-bold text-white">IT Budget Estimates</span></div>
-                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-midnight-950 flex items-center justify-center text-red-500 mr-3 border border-midnight-800"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div><span class="text-sm font-bold text-white">Company Revenue</span></div>
-                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-midnight-950 flex items-center justify-center text-red-500 mr-3 border border-midnight-800"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></div><span class="text-sm font-bold text-white">Employee Headcount</span></div>
-                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-midnight-950 flex items-center justify-center text-red-500 mr-3 border border-midnight-800"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg></div><span class="text-sm font-bold text-white">LinkedIn Profile URLs</span></div>
-                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-midnight-950 flex items-center justify-center text-red-500 mr-3 border border-midnight-800"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><span class="text-sm font-bold text-white">HQ & Branch Locations</span></div>
+                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg></div><span class="text-sm font-bold text-headtext">Verified B2B Email</span></div>
+                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg></div><span class="text-sm font-bold text-headtext">Direct Dial Phone</span></div>
+                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></div><span class="text-sm font-bold text-headtext">Installed Tech Stack</span></div>
+                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><span class="text-sm font-bold text-headtext">IT Budget Estimates</span></div>
+                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div><span class="text-sm font-bold text-headtext">Company Revenue</span></div>
+                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></div><span class="text-sm font-bold text-headtext">Employee Headcount</span></div>
+                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg></div><span class="text-sm font-bold text-headtext">LinkedIn Profile URLs</span></div>
+                <div class="flex items-center"><div class="flex-shrink-0 w-8 h-8 rounded bg-bgmain flex items-center justify-center text-primary mr-3 border border-bordercol"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><span class="text-sm font-bold text-headtext">HQ & Branch Locations</span></div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-midnight-950 border-b border-midnight-900 relative overflow-hidden">
+    <section class="py-24 bg-bgmain border-b border-bordercol relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-white tracking-tight mb-4">The <span class="text-red-500">5-Point</span> Tech Data Scrub</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto text-lg">Tech leaders change jobs constantly. We utilize a rigorous, rolling 45-day AI and manual verification process to guarantee minimal bounce rates.</p>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-headtext tracking-tight mb-4">The <span class="text-primary">5-Point</span> Tech Data Scrub</h2>
+                <p class="text-paratext max-w-2xl mx-auto text-lg">Tech leaders change jobs constantly. We utilize a rigorous, rolling 45-day AI and manual verification process to guarantee minimal bounce rates.</p>
             </div>
             
             <div class="relative">
-                <div class="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-midnight-800 rounded"></div>
+                <div class="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-bgmain rounded"></div>
                 
                 <div class="space-y-12 lg:space-y-0">
                     <div class="relative flex items-center justify-between lg:mb-12">
                         <div class="hidden lg:block w-5/12"></div>
-                        <div class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-red-600 rounded-full items-center justify-center text-white font-bold text-xl z-10 border-4 border-midnight-950 shadow-lg">1</div>
+                        <div class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-btnbg rounded-full items-center justify-center text-btntext font-bold text-xl z-10 border-4 border-bordercol shadow-lg">1</div>
                         <div class="w-full lg:w-5/12 lg:pl-10">
-                            <div class="bg-midnight-900 border border-midnight-800 p-6 rounded-xl shadow-lg hover:border-red-900 transition-colors">
-                                <h3 class="text-xl font-bold text-white mb-2">Technographic Crawling</h3>
-                                <p class="text-sm text-gray-400">We scrape public APIs, job postings, and website meta-data to definitively identify what software and hardware companies are actively running in their backend.</p>
+                            <div class="bg-bgmain border border-bordercol p-6 rounded-xl shadow-lg hover:border-primary transition-colors">
+                                <h3 class="text-xl font-bold text-headtext mb-2">Technographic Crawling</h3>
+                                <p class="text-sm text-paratext">We scrape public APIs, job postings, and website meta-data to definitively identify what software and hardware companies are actively running in their backend.</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="relative flex items-center justify-between lg:mb-12 flex-row-reverse lg:flex-row">
                         <div class="w-full lg:w-5/12 lg:pr-10 text-left lg:text-right">
-                            <div class="bg-midnight-900 border border-midnight-800 p-6 rounded-xl shadow-lg hover:border-red-900 transition-colors">
-                                <h3 class="text-xl font-bold text-white mb-2">Role & Title Validation</h3>
-                                <p class="text-sm text-gray-400">Algorithms cross-reference corporate directories and professional networks (like LinkedIn) to ensure the contact is still currently employed in the specified IT decision-making role.</p>
+                            <div class="bg-bgmain border border-bordercol p-6 rounded-xl shadow-lg hover:border-primary transition-colors">
+                                <h3 class="text-xl font-bold text-headtext mb-2">Role & Title Validation</h3>
+                                <p class="text-sm text-paratext">Algorithms cross-reference corporate directories and professional networks (like LinkedIn) to ensure the contact is still currently employed in the specified IT decision-making role.</p>
                             </div>
                         </div>
-                        <div class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-red-600 rounded-full items-center justify-center text-white font-bold text-xl z-10 border-4 border-midnight-950 shadow-lg">2</div>
+                        <div class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-btnbg rounded-full items-center justify-center text-btntext font-bold text-xl z-10 border-4 border-bordercol shadow-lg">2</div>
                         <div class="hidden lg:block w-5/12"></div>
                     </div>
                     
                     <div class="relative flex items-center justify-between lg:mb-12">
                         <div class="hidden lg:block w-5/12"></div>
-                        <div class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-red-600 rounded-full items-center justify-center text-white font-bold text-xl z-10 border-4 border-midnight-950 shadow-lg">3</div>
+                        <div class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-btnbg rounded-full items-center justify-center text-btntext font-bold text-xl z-10 border-4 border-bordercol shadow-lg">3</div>
                         <div class="w-full lg:w-5/12 lg:pl-10">
-                            <div class="bg-midnight-900 border border-midnight-800 p-6 rounded-xl shadow-lg hover:border-red-900 transition-colors">
-                                <h3 class="text-xl font-bold text-white mb-2">Live SMTP Server Ping</h3>
-                                <p class="text-sm text-gray-400">Right before list delivery, we execute a zero-footprint handshake with the recipient's mail server to guarantee the email address exists without actually sending a message.</p>
+                            <div class="bg-bgmain border border-bordercol p-6 rounded-xl shadow-lg hover:border-primary transition-colors">
+                                <h3 class="text-xl font-bold text-headtext mb-2">Live SMTP Server Ping</h3>
+                                <p class="text-sm text-paratext">Right before list delivery, we execute a zero-footprint handshake with the recipient's mail server to guarantee the email address exists without actually sending a message.</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="relative flex items-center justify-between lg:mb-12 flex-row-reverse lg:flex-row">
                         <div class="w-full lg:w-5/12 lg:pr-10 text-left lg:text-right">
-                            <div class="bg-midnight-900 border border-midnight-800 p-6 rounded-xl shadow-lg hover:border-red-900 transition-colors">
-                                <h3 class="text-xl font-bold text-white mb-2">Catch-All & Honeypot Removal</h3>
-                                <p class="text-sm text-gray-400">We aggressively filter out 'catch-all' domain configurations, spam traps, and generic role-based emails (e.g., info@, support@) to protect your sender reputation.</p>
+                            <div class="bg-bgmain border border-bordercol p-6 rounded-xl shadow-lg hover:border-primary transition-colors">
+                                <h3 class="text-xl font-bold text-headtext mb-2">Catch-All & Honeypot Removal</h3>
+                                <p class="text-sm text-paratext">We aggressively filter out 'catch-all' domain configurations, spam traps, and generic role-based emails (e.g., info@, support@) to protect your sender reputation.</p>
                             </div>
                         </div>
-                        <div class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-red-600 rounded-full items-center justify-center text-white font-bold text-xl z-10 border-4 border-midnight-950 shadow-lg">4</div>
+                        <div class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-btnbg rounded-full items-center justify-center text-btntext font-bold text-xl z-10 border-4 border-bordercol shadow-lg">4</div>
                         <div class="hidden lg:block w-5/12"></div>
                     </div>
                     
                     <div class="relative flex items-center justify-between">
                         <div class="hidden lg:block w-5/12"></div>
-                        <div class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-red-600 rounded-full items-center justify-center text-white font-bold text-xl z-10 border-4 border-midnight-950 shadow-lg">5</div>
+                        <div class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-btnbg rounded-full items-center justify-center text-btntext font-bold text-xl z-10 border-4 border-bordercol shadow-lg">5</div>
                         <div class="w-full lg:w-5/12 lg:pl-10">
-                            <div class="bg-midnight-900 border border-midnight-800 p-6 rounded-xl shadow-lg hover:border-red-900 transition-colors">
-                                <h3 class="text-xl font-bold text-white mb-2">Human Quality Assurance</h3>
-                                <p class="text-sm text-gray-400">Finally, our internal data scientists perform spot-checks and global compliance screening (GDPR, CAN-SPAM) before the CSV file is generated for you.</p>
+                            <div class="bg-bgmain border border-bordercol p-6 rounded-xl shadow-lg hover:border-primary transition-colors">
+                                <h3 class="text-xl font-bold text-headtext mb-2">Human Quality Assurance</h3>
+                                <p class="text-sm text-paratext">Finally, our internal data scientists perform spot-checks and global compliance screening (GDPR, CAN-SPAM) before the CSV file is generated for you.</p>
                             </div>
                         </div>
                     </div>
@@ -445,18 +472,18 @@
         </div>
     </section>
 
-    <section id="sample" class="bg-midnight-900 py-20 border-b border-midnight-800">
+    <section id="sample" class="bg-bgmain py-20 border-b border-bordercol">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-end mb-6">
                 <div>
-                    <h2 class="text-2xl font-bold text-white">Database Output Preview</h2>
-                    <p class="text-sm text-gray-400 mt-1">Sample format of your final CSV export.</p>
+                    <h2 class="text-2xl font-bold text-headtext">Database Output Preview</h2>
+                    <p class="text-sm text-paratext mt-1">Sample format of your final CSV export.</p>
                 </div>
             </div>
             
-            <div class="overflow-x-auto bg-midnight-950 border border-midnight-800 rounded-lg shadow-xl">
-                <table class="w-full text-left text-sm text-gray-400">
-                    <thead class="bg-midnight-800 text-gray-200 text-xs uppercase font-bold border-b border-midnight-700">
+            <div class="overflow-x-auto bg-bgmain border border-bordercol rounded-lg shadow-xl">
+                <table class="w-full text-left text-sm text-paratext">
+                    <thead class="bg-bgmain text-paratext text-xs uppercase font-bold border-b border-bordercol">
                         <tr>
                             <th class="px-6 py-4">IT Decision Maker</th>
                             <th class="px-6 py-4">Company</th>
@@ -466,40 +493,40 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-midnight-800">
-                        <tr class="hover:bg-midnight-800/50 transition-colors">
+                        <tr class="hover:bg-bgmain/50 transition-colors">
                             <td class="px-6 py-4">
-                                <p class="font-bold text-white text-base">John Smith</p>
-                                <p class="text-xs text-red-400 mt-0.5">Chief Information Officer</p>
+                                <p class="font-bold text-headtext text-base">John Smith</p>
+                                <p class="text-xs text-primary mt-0.5">Chief Information Officer</p>
                             </td>
-                            <td class="px-6 py-4">GlobalTech Industries<br><span class="text-xs text-gray-500">Rev: $500M+</span></td>
+                            <td class="px-6 py-4">GlobalTech Industries<br><span class="text-xs text-paratext">Rev: $500M+</span></td>
                             <td class="px-6 py-4 font-mono text-xs">AWS, Salesforce, Okta</td>
                             <td class="px-6 py-4 blur-[3px] select-none">j.smith@globaltech.com</td>
                             <td class="px-6 py-4 blur-[3px] select-none">+1 (212) 555-XXXX</td>
                         </tr>
-                        <tr class="hover:bg-midnight-800/50 transition-colors">
+                        <tr class="hover:bg-bgmain/50 transition-colors">
                             <td class="px-6 py-4">
-                                <p class="font-bold text-white text-base">Sarah Connor</p>
-                                <p class="text-xs text-red-400 mt-0.5">VP of Engineering</p>
+                                <p class="font-bold text-headtext text-base">Sarah Connor</p>
+                                <p class="text-xs text-primary mt-0.5">VP of Engineering</p>
                             </td>
-                            <td class="px-6 py-4">DataFlow Systems<br><span class="text-xs text-gray-500">Rev: $50M - $100M</span></td>
+                            <td class="px-6 py-4">DataFlow Systems<br><span class="text-xs text-paratext">Rev: $50M - $100M</span></td>
                             <td class="px-6 py-4 font-mono text-xs">GCP, Datadog, Docker</td>
                             <td class="px-6 py-4 blur-[3px] select-none">sconnor@dataflow.io</td>
                             <td class="px-6 py-4 blur-[3px] select-none">+1 (415) 555-XXXX</td>
                         </tr>
-                        <tr class="hover:bg-midnight-800/50 transition-colors">
+                        <tr class="hover:bg-bgmain/50 transition-colors">
                             <td class="px-6 py-4">
-                                <p class="font-bold text-white text-base">Michael Chang</p>
-                                <p class="text-xs text-red-400 mt-0.5">Chief Information Security Officer</p>
+                                <p class="font-bold text-headtext text-base">Michael Chang</p>
+                                <p class="text-xs text-primary mt-0.5">Chief Information Security Officer</p>
                             </td>
-                            <td class="px-6 py-4">SecureBank Financial<br><span class="text-xs text-gray-500">Rev: $1B+</span></td>
+                            <td class="px-6 py-4">SecureBank Financial<br><span class="text-xs text-paratext">Rev: $1B+</span></td>
                             <td class="px-6 py-4 font-mono text-xs">CrowdStrike, Azure, Cisco</td>
                             <td class="px-6 py-4 blur-[3px] select-none">m.chang@securebank.net</td>
                             <td class="px-6 py-4 blur-[3px] select-none">+1 (312) 555-XXXX</td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="p-4 bg-midnight-950 text-center border-t border-midnight-800">
-                    <button class="text-white hover:text-red-400 font-bold text-sm flex items-center justify-center w-full transition-colors">
+                <div class="p-4 bg-bgmain text-center border-t border-bordercol">
+                    <button class="text-headtext hover:text-primary font-bold text-sm flex items-center justify-center w-full transition-colors">
                         Download Complete Excel Sample <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </button>
                 </div>
@@ -507,241 +534,241 @@
         </div>
     </section>
 
-    <section class="py-20 bg-midnight-950 border-b border-midnight-900">
+    <section class="py-20 bg-bgmain border-b border-bordercol">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-12 text-center">
-                <h2 class="text-3xl font-extrabold text-white tracking-tight mb-4">Who Needs This <span class="text-red-500">Data?</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto text-lg">Fuel the outbound pipeline for technology sales teams.</p>
+                <h2 class="text-3xl font-extrabold text-headtext tracking-tight mb-4">Who Needs This <span class="text-primary">Data?</span></h2>
+                <p class="text-paratext max-w-2xl mx-auto text-lg">Fuel the outbound pipeline for technology sales teams.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                <div class="flex items-start p-6 bg-midnight-900 rounded-xl border border-midnight-800">
-                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-midnight-950 flex items-center justify-center border border-midnight-700 mr-5">
-                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <div class="flex items-start p-6 bg-bgmain rounded-xl border border-bordercol">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-bgmain flex items-center justify-center border border-bordercol mr-5">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </div>
                     <div>
-                        <h4 class="text-lg font-bold text-white mb-2">SaaS & Software Vendors</h4>
-                        <p class="text-sm text-gray-400 leading-relaxed">Find companies using your competitors and pitch migration services directly to the VP of IT or CTO.</p>
+                        <h4 class="text-lg font-bold text-headtext mb-2">SaaS & Software Vendors</h4>
+                        <p class="text-sm text-paratext leading-relaxed">Find companies using your competitors and pitch migration services directly to the VP of IT or CTO.</p>
                     </div>
                 </div>
-                <div class="flex items-start p-6 bg-midnight-900 rounded-xl border border-midnight-800">
-                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-midnight-950 flex items-center justify-center border border-midnight-700 mr-5">
-                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                <div class="flex items-start p-6 bg-bgmain rounded-xl border border-bordercol">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-bgmain flex items-center justify-center border border-bordercol mr-5">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                     </div>
                     <div>
-                        <h4 class="text-lg font-bold text-white mb-2">Cybersecurity Firms</h4>
-                        <p class="text-sm text-gray-400 leading-relaxed">Reach CISOs and Security Directors to offer pentesting, compliance audits, or endpoint protection solutions.</p>
+                        <h4 class="text-lg font-bold text-headtext mb-2">Cybersecurity Firms</h4>
+                        <p class="text-sm text-paratext leading-relaxed">Reach CISOs and Security Directors to offer pentesting, compliance audits, or endpoint protection solutions.</p>
                     </div>
                 </div>
-                <div class="flex items-start p-6 bg-midnight-900 rounded-xl border border-midnight-800">
-                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-midnight-950 flex items-center justify-center border border-midnight-700 mr-5">
-                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                <div class="flex items-start p-6 bg-bgmain rounded-xl border border-bordercol">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-bgmain flex items-center justify-center border border-bordercol mr-5">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
                     </div>
                     <div>
-                        <h4 class="text-lg font-bold text-white mb-2">Managed Service Providers (MSPs)</h4>
-                        <p class="text-sm text-gray-400 leading-relaxed">Target companies in specific geographic radiuses to offer outsourced IT, helpdesk support, or cloud migration.</p>
+                        <h4 class="text-lg font-bold text-headtext mb-2">Managed Service Providers (MSPs)</h4>
+                        <p class="text-sm text-paratext leading-relaxed">Target companies in specific geographic radiuses to offer outsourced IT, helpdesk support, or cloud migration.</p>
                     </div>
                 </div>
-                <div class="flex items-start p-6 bg-midnight-900 rounded-xl border border-midnight-800">
-                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-midnight-950 flex items-center justify-center border border-midnight-700 mr-5">
-                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                <div class="flex items-start p-6 bg-bgmain rounded-xl border border-bordercol">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-bgmain flex items-center justify-center border border-bordercol mr-5">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                     </div>
                     <div>
-                        <h4 class="text-lg font-bold text-white mb-2">Hardware & Infrastructure Sales</h4>
-                        <p class="text-sm text-gray-400 leading-relaxed">Connect with Network Admins and IT Directors to pitch servers, routing equipment, and employee workstations.</p>
+                        <h4 class="text-lg font-bold text-headtext mb-2">Hardware & Infrastructure Sales</h4>
+                        <p class="text-sm text-paratext leading-relaxed">Connect with Network Admins and IT Directors to pitch servers, routing equipment, and employee workstations.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-midnight-900 border-b border-midnight-800">
+    <section class="py-16 bg-bgmain border-b border-bordercol">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10">
-                <h3 class="text-2xl font-bold text-white mb-3">Sync Directly to Your Workflow</h3>
-                <p class="text-sm font-medium text-gray-500 max-w-2xl mx-auto">Export your customized list in universal CSV format, pre-formatted to map flawlessly into major CRMs and outbound sales tools with zero friction.</p>
+                <h3 class="text-2xl font-bold text-headtext mb-3">Sync Directly to Your Workflow</h3>
+                <p class="text-sm font-medium text-paratext max-w-2xl mx-auto">Export your customized list in universal CSV format, pre-formatted to map flawlessly into major CRMs and outbound sales tools with zero friction.</p>
             </div>
             
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 lg:gap-16 opacity-60">
-                <div class="flex items-center text-white font-bold text-xl hover:text-red-500 transition-colors cursor-default">
+                <div class="flex items-center text-headtext font-bold text-xl hover:text-primary transition-colors cursor-default">
                     <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg> Salesforce
                 </div>
-                <div class="flex items-center text-white font-bold text-xl hover:text-red-500 transition-colors cursor-default">
+                <div class="flex items-center text-headtext font-bold text-xl hover:text-primary transition-colors cursor-default">
                     <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 12h3v8h14v-8h3L12 2zm0 3.83L17.17 11H15v7h-6v-7H6.83L12 5.83z"/></svg> HubSpot
                 </div>
-                <div class="flex items-center text-white font-bold text-xl hover:text-red-500 transition-colors cursor-default">
+                <div class="flex items-center text-headtext font-bold text-xl hover:text-primary transition-colors cursor-default">
                     <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 15h14v3H5v-3zm0-5h14v3H5v-3zm0-5h14v3H5V5z"/></svg> Microsoft Dynamics
                 </div>
-                <div class="flex items-center text-white font-bold text-xl hover:text-red-500 transition-colors cursor-default">
+                <div class="flex items-center text-headtext font-bold text-xl hover:text-primary transition-colors cursor-default">
                     <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg> Outreach.io
                 </div>
-                <div class="flex items-center text-white font-bold text-xl hover:text-red-500 transition-colors cursor-default">
+                <div class="flex items-center text-headtext font-bold text-xl hover:text-primary transition-colors cursor-default">
                     <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11v6h2v-6h-2zm0-4v2h2V7h-2z"/></svg> Apollo
                 </div>
             </div>
 
-            <div class="mt-12 text-center border-t border-midnight-800 pt-8">
+            <div class="mt-12 text-center border-t border-bordercol pt-8">
                 <div class="flex justify-center space-x-6">
-                    <span class="text-sm text-gray-400 flex items-center font-mono"><svg class="w-4 h-4 text-green-500 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> CAN-SPAM COMPLIANT</span>
-                    <span class="text-sm text-gray-400 flex items-center font-mono"><svg class="w-4 h-4 text-green-500 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> CCPA COMPLIANT</span>
-                    <span class="text-sm text-gray-400 flex items-center font-mono"><svg class="w-4 h-4 text-green-500 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> GDPR COMPLIANT</span>
+                    <span class="text-sm text-paratext flex items-center font-mono"><svg class="w-4 h-4 text-primary mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> CAN-SPAM COMPLIANT</span>
+                    <span class="text-sm text-paratext flex items-center font-mono"><svg class="w-4 h-4 text-primary mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> CCPA COMPLIANT</span>
+                    <span class="text-sm text-paratext flex items-center font-mono"><svg class="w-4 h-4 text-primary mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> GDPR COMPLIANT</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="pricing" class="py-24 bg-midnight-950 border-b border-midnight-900 relative">
+    <section id="pricing" class="py-24 bg-bgmain border-b border-bordercol relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-white tracking-tight mb-4">Data Investment <span class="text-red-500">Plans</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto text-lg">No hidden fees. No recurring subscriptions. Pay once and own the data forever in a clean CSV/Excel format.</p>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-headtext tracking-tight mb-4">Data Investment <span class="text-primary">Plans</span></h2>
+                <p class="text-paratext max-w-2xl mx-auto text-lg">No hidden fees. No recurring subscriptions. Pay once and own the data forever in a clean CSV/Excel format.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-midnight-900 rounded-2xl border border-midnight-800 p-8 hover:border-red-600 transition-all duration-300 flex flex-col">
+                <div class="bg-bgmain rounded-2xl border border-bordercol p-8 hover:border-primary transition-all duration-300 flex flex-col">
                     <div class="mb-6">
-                        <h3 class="text-xl font-bold text-white mb-2">Startup Stack</h3>
-                        <p class="text-sm text-gray-500 h-10">Perfect for localized IT service providers.</p>
+                        <h3 class="text-xl font-bold text-headtext mb-2">Startup Stack</h3>
+                        <p class="text-sm text-paratext h-10">Perfect for localized IT service providers.</p>
                     </div>
-                    <div class="mb-6 border-b border-midnight-800 pb-6">
-                        <span class="text-5xl font-extrabold text-white">$650</span>
-                        <span class="text-gray-500 text-sm font-medium">/ flat fee</span>
+                    <div class="mb-6 border-b border-bordercol pb-6">
+                        <span class="text-5xl font-extrabold text-headtext">$650</span>
+                        <span class="text-paratext text-sm font-medium">/ flat fee</span>
                     </div>
                     <ul class="space-y-4 mb-8 flex-grow">
-                        <li class="flex items-start text-sm text-gray-300">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             Up to 5,000 Verified Records
                         </li>
-                        <li class="flex items-start text-sm text-gray-300">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             Filter by Job Title (Director/Manager level)
                         </li>
-                        <li class="flex items-start text-sm text-gray-300">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             Verified Emails & Company Phones
                         </li>
-                        <li class="flex items-start text-sm text-gray-600">
-                            <svg class="w-5 h-5 text-gray-700 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        <li class="flex items-start text-sm text-headtext">
+                            <svg class="w-5 h-5 text-headtext mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path></svg>
                             No Tech Stack Filtering
                         </li>
-                        <li class="flex items-start text-sm text-gray-600">
-                            <svg class="w-5 h-5 text-gray-700 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        <li class="flex items-start text-sm text-headtext">
+                            <svg class="w-5 h-5 text-headtext mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path></svg>
                             No C-Suite Contacts (CIO/CTO)
                         </li>
                     </ul>
-                    <button class="w-full py-3.5 px-4 bg-midnight-800 text-white font-bold rounded-lg hover:bg-midnight-700 transition font-mono uppercase text-sm">Select Plan</button>
+                    <button class="w-full py-3.5 px-4 bg-bgmain text-headtext font-bold rounded-lg hover:bg-bgmain transition font-mono uppercase text-sm">Select Plan</button>
                 </div>
                 
-                <div class="bg-gradient-to-b from-midnight-800 to-midnight-900 rounded-2xl border-2 border-red-600 p-8 transform md:-translate-y-4 shadow-2xl flex flex-col relative glow-box">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-600 text-white px-5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Most Popular</div>
+                <div class="bg-gradient-to-b from-midnight-800 to-midnight-900 rounded-2xl border-2 border-primary p-8 transform md:-translate-y-4 shadow-2xl flex flex-col relative glow-box">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-btnbg text-btntext px-5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Most Popular</div>
                     <div class="mb-6">
-                        <h3 class="text-xl font-bold text-white mb-2">Growth Scale</h3>
-                        <p class="text-sm text-gray-400 h-10">Ideal for growing SaaS and Cybersecurity outbound teams.</p>
+                        <h3 class="text-xl font-bold text-headtext mb-2">Growth Scale</h3>
+                        <p class="text-sm text-paratext h-10">Ideal for growing SaaS and Cybersecurity outbound teams.</p>
                     </div>
-                    <div class="mb-6 border-b border-midnight-700 pb-6">
-                        <span class="text-5xl font-extrabold text-white">$1,650</span>
-                        <span class="text-gray-400 text-sm font-medium">/ flat fee</span>
+                    <div class="mb-6 border-b border-bordercol pb-6">
+                        <span class="text-5xl font-extrabold text-headtext">$1,650</span>
+                        <span class="text-paratext text-sm font-medium">/ flat fee</span>
                     </div>
                     <ul class="space-y-4 mb-8 flex-grow">
-                        <li class="flex items-start text-sm text-white font-medium">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-headtext font-medium">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             Up to 25,000 Verified Records
                         </li>
-                        <li class="flex items-start text-sm text-gray-200">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             Includes C-Suite (CIO, CTO, CISO)
                         </li>
-                        <li class="flex items-start text-sm text-gray-200">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             Full Tech Stack Filtering (AWS, SFDC, etc.)
                         </li>
-                        <li class="flex items-start text-sm text-gray-200">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             LinkedIn Profiles Included
                         </li>
-                        <li class="flex items-start text-sm text-gray-200">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             1 Free List Update (within 6 months)
                         </li>
                     </ul>
-                    <button class="w-full py-3.5 px-4 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition shadow-lg font-mono uppercase text-sm">Purchase List</button>
+                    <button class="w-full py-3.5 px-4 bg-btnbg text-btntext font-bold rounded-lg hover:bg-btnbg transition shadow-lg font-mono uppercase text-sm">Purchase List</button>
                 </div>
                 
-                <div class="bg-midnight-900 rounded-2xl border border-midnight-800 p-8 hover:border-red-600 transition-all duration-300 flex flex-col">
+                <div class="bg-bgmain rounded-2xl border border-bordercol p-8 hover:border-primary transition-all duration-300 flex flex-col">
                     <div class="mb-6">
-                        <h3 class="text-xl font-bold text-white mb-2">Enterprise Sync</h3>
-                        <p class="text-sm text-gray-500 h-10">Full CRM ingestion for major enterprise vendors.</p>
+                        <h3 class="text-xl font-bold text-headtext mb-2">Enterprise Sync</h3>
+                        <p class="text-sm text-paratext h-10">Full CRM ingestion for major enterprise vendors.</p>
                     </div>
-                    <div class="mb-6 border-b border-midnight-800 pb-6">
-                        <span class="text-4xl font-extrabold text-white">Custom</span>
+                    <div class="mb-6 border-b border-bordercol pb-6">
+                        <span class="text-4xl font-extrabold text-headtext">Custom</span>
                     </div>
                     <ul class="space-y-4 mb-8 flex-grow">
-                        <li class="flex items-start text-sm text-gray-300">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             Access to all 3.4M+ IT Decision Makers
                         </li>
-                        <li class="flex items-start text-sm text-gray-300">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             REST API / Webhook Integration
                         </li>
-                        <li class="flex items-start text-sm text-gray-300">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             Dedicated Data Scientist / AM
                         </li>
-                        <li class="flex items-start text-sm text-gray-300">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             Quarterly Automatic Scrubbing
                         </li>
-                        <li class="flex items-start text-sm text-gray-300">
-                            <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <li class="flex items-start text-sm text-paratext">
+                            <svg class="w-5 h-5 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             Custom Data Enrichment
                         </li>
                     </ul>
-                    <button class="w-full py-3.5 px-4 bg-midnight-800 text-white font-bold rounded-lg hover:bg-midnight-700 transition font-mono uppercase text-sm">Contact Sales</button>
+                    <button class="w-full py-3.5 px-4 bg-bgmain text-headtext font-bold rounded-lg hover:bg-bgmain transition font-mono uppercase text-sm">Contact Sales</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-midnight-900 border-b border-midnight-800">
+    <section class="py-20 bg-bgmain border-b border-bordercol">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-extrabold text-white tracking-tight mb-4">Frequently Asked <span class="text-red-500">Questions</span></h2>
+                <h2 class="text-3xl font-extrabold text-headtext tracking-tight mb-4">Frequently Asked <span class="text-primary">Questions</span></h2>
             </div>
             <div class="space-y-4">
-                <details class="bg-midnight-950 border border-midnight-800 rounded-lg group" open>
-                    <summary class="px-6 py-5 font-bold cursor-pointer text-white flex justify-between items-center hover:text-red-500 transition-colors list-none">
+                <details class="bg-bgmain border border-bordercol rounded-lg group" open>
+                    <summary class="px-6 py-5 font-bold cursor-pointer text-headtext flex justify-between items-center hover:text-primary transition-colors list-none">
                         How accurately can you identify a company's technology stack?
                         <span class="faq-arrow"></span>
                     </summary>
-                    <div class="px-6 pb-5 text-sm text-gray-400 leading-relaxed border-t border-midnight-800 pt-4">
+                    <div class="px-6 pb-5 text-sm text-paratext leading-relaxed border-t border-bordercol pt-4">
                         We utilize technographic tracking that monitors publicly facing technologies (like CMS, ad tech, and cloud hosting IPs) combined with job posting data and financial reports to deduce backend systems (like ERP and Security) with 85%+ accuracy.
                     </div>
                 </details>
-                <details class="bg-midnight-950 border border-midnight-800 rounded-lg group">
-                    <summary class="px-6 py-5 font-bold cursor-pointer text-white flex justify-between items-center hover:text-red-500 transition-colors list-none">
+                <details class="bg-bgmain border border-bordercol rounded-lg group">
+                    <summary class="px-6 py-5 font-bold cursor-pointer text-headtext flex justify-between items-center hover:text-primary transition-colors list-none">
                         What is your data replacement policy for hard bounces?
                         <span class="faq-arrow"></span>
                     </summary>
-                    <div class="px-6 pb-5 text-sm text-gray-400 leading-relaxed border-t border-midnight-800 pt-4">
+                    <div class="px-6 pb-5 text-sm text-paratext leading-relaxed border-t border-bordercol pt-4">
                         We guarantee a deliverability rate of 95%. IT decision makers change roles frequently, so if your hard bounce rate exceeds 5% within 30 days of purchasing the list, we will replace the bounced records for free.
                     </div>
                 </details>
-                <details class="bg-midnight-950 border border-midnight-800 rounded-lg group">
-                    <summary class="px-6 py-5 font-bold cursor-pointer text-white flex justify-between items-center hover:text-red-500 transition-colors list-none">
+                <details class="bg-bgmain border border-bordercol rounded-lg group">
+                    <summary class="px-6 py-5 font-bold cursor-pointer text-headtext flex justify-between items-center hover:text-primary transition-colors list-none">
                         Can I target companies based on IT budget size?
                         <span class="faq-arrow"></span>
                     </summary>
-                    <div class="px-6 pb-5 text-sm text-gray-400 leading-relaxed border-t border-midnight-800 pt-4">
+                    <div class="px-6 pb-5 text-sm text-paratext leading-relaxed border-t border-bordercol pt-4">
                         Yes. Using algorithms that evaluate total revenue, employee headcount, industry benchmarks, and active job postings, we append an estimated IT budget tier to each account.
                     </div>
                 </details>
-                <details class="bg-midnight-950 border border-midnight-800 rounded-lg group">
-                    <summary class="px-6 py-5 font-bold cursor-pointer text-white flex justify-between items-center hover:text-red-500 transition-colors list-none">
+                <details class="bg-bgmain border border-bordercol rounded-lg group">
+                    <summary class="px-6 py-5 font-bold cursor-pointer text-headtext flex justify-between items-center hover:text-primary transition-colors list-none">
                         Is this list compliant with B2B marketing regulations?
                         <span class="faq-arrow"></span>
                     </summary>
-                    <div class="px-6 pb-5 text-sm text-gray-400 leading-relaxed border-t border-midnight-800 pt-4">
+                    <div class="px-6 pb-5 text-sm text-paratext leading-relaxed border-t border-bordercol pt-4">
                         Absolutely. We strictly adhere to CAN-SPAM, CCPA, and GDPR regulations. All corporate data is aggregated from opt-in B2B sources and public business registries.
                     </div>
                 </details>
@@ -749,48 +776,137 @@
         </div>
     </section>
 
-    <section class="py-24 bg-red-600 relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-red-700 to-red-500 mix-blend-multiply"></div>
-        <div class="absolute -top-40 -right-40 w-96 h-96 bg-red-500 rounded-full blur-[80px] opacity-50"></div>
+    <section class="py-24 bg-btnbg relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary0 mix-blend-multiply"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-btnbg rounded-full blur-[80px] opacity-50"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h2 class="text-4xl font-extrabold text-white tracking-tight mb-4">Start Selling to Tech Leaders Today.</h2>
-            <p class="text-red-100 text-lg mb-8">Request a personalized quote today and get 50 free verified IT Decision Maker leads directly in your inbox.</p>
+            <h2 class="text-4xl font-extrabold text-headtext tracking-tight mb-4">Start Selling to Tech Leaders Today.</h2>
+            <p class="text-primary text-lg mb-8">Request a personalized quote today and get 50 free verified IT Decision Maker leads directly in your inbox.</p>
             <form class="flex flex-col sm:flex-row justify-center gap-4 max-w-2xl mx-auto">
-                <input type="text" placeholder="First Name" required class="px-4 py-3.5 rounded-sm text-gray-800 w-full focus:outline-none focus:ring-2 focus:ring-midnight-900 shadow-inner border-0">
-                <input type="email" placeholder="Work Email" required class="px-4 py-3.5 rounded-sm text-gray-800 w-full focus:outline-none focus:ring-2 focus:ring-midnight-900 shadow-inner border-0">
-                <button type="button" class="bg-midnight-900 text-white font-bold px-8 py-3.5 rounded-sm hover:bg-midnight-950 transition-colors whitespace-nowrap shadow-xl font-mono uppercase tracking-wider">Execute</button>
+                <input type="text" placeholder="First Name" required class="px-4 py-3.5 rounded-sm text-headtext w-full focus:outline-none focus:ring-2 focus:ring-bordercol shadow-inner border-0">
+                <input type="email" placeholder="Work Email" required class="px-4 py-3.5 rounded-sm text-headtext w-full focus:outline-none focus:ring-2 focus:ring-bordercol shadow-inner border-0">
+                <button type="button" class="bg-bgmain text-headtext font-bold px-8 py-3.5 rounded-sm hover:bg-bgmain transition-colors whitespace-nowrap shadow-xl font-mono uppercase tracking-wider">Execute</button>
             </form>
         </div>
     </section>
 
-    <footer class="bg-midnight-950 text-white relative pt-16 pb-8 border-t border-midnight-900 mt-auto">
-        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-800 via-red-600 to-red-900"></div>
+    <!-- Deep Data Intelligence Section -->
+    
+    <!-- Premium Data Intelligence & Partnerships Section -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <!-- Abstract Topography Background -->
+        <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-[#09C000]/10 text-[#09C000] font-bold text-sm tracking-wider uppercase mb-6 border border-[#09C000]/20">Why Choose B2BLeadNex</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-[#222222] tracking-tight mb-6 leading-tight">
+                    Deep Data Intelligence. <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#09C000] to-[#0B6B3A]">Real Conversations.</span>
+                </h2>
+                <p class="text-[#666666] text-lg md:text-xl leading-relaxed">
+                    Partner with industry leaders. We source from public surveys, yellow pages, and trusted consent-based directories to deliver tele-verified insights that eliminate data silos and cold leads.
+                </p>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_40px_rgba(9,192,0,0.12)] hover:-translate-y-1 transition-all duration-300 relative group overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#09C000] to-[#0B6B3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="w-14 h-14 bg-[#F8F8F8] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-[#09C000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#222222] mb-3">Multi-Source Aggregation</h3>
+                    <p class="text-[#666666] leading-relaxed text-sm">Data gathered comprehensively from state registries, professional directories, and reputable medical publications.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_40px_rgba(9,192,0,0.12)] hover:-translate-y-1 transition-all duration-300 relative group overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#09C000] to-[#0B6B3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="w-14 h-14 bg-[#F8F8F8] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-[#09C000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#222222] mb-3">Consent & Tele-Verified</h3>
+                    <p class="text-[#666666] leading-relaxed text-sm">We only offer consent-based insights scrubbed via direct phone validation to remove disconnected lines and cold leads.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_40px_rgba(9,192,0,0.12)] hover:-translate-y-1 transition-all duration-300 relative group overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#09C000] to-[#0B6B3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="w-14 h-14 bg-[#F8F8F8] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-[#09C000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#222222] mb-3">High-Tier Partnerships</h3>
+                    <p class="text-[#666666] leading-relaxed text-sm">Partner with the industry's big players and rapidly garner a customer circle of high-tier, loyal clients.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_40px_rgba(9,192,0,0.12)] hover:-translate-y-1 transition-all duration-300 relative group overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#09C000] to-[#0B6B3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="w-14 h-14 bg-[#F8F8F8] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-[#09C000]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#222222] mb-3">Perfect Inbox Delivery</h3>
+                    <p class="text-[#666666] leading-relaxed text-sm">Execute zero-bounce handshakes. Rest assured knowing your highly-relevant messages land in the right inbox every time.</p>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="contact-us.html" class="inline-flex items-center justify-center bg-[#09C000] text-white font-bold px-10 py-4 rounded-lg uppercase tracking-wider text-sm hover:bg-[#0B6B3A] transition-all shadow-[0_10px_20px_rgba(9,192,0,0.25)] hover:shadow-[0_15px_30px_rgba(9,192,0,0.4)] group">
+                    Explore Our Data-Smart Database
+                    <svg class="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Green CTA Banner -->
+    <section class="bg-[#2B9A34] py-16 relative overflow-hidden">
+        <!-- Background decorative elements for the silhouettes -->
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-black/20 to-transparent pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
+            <h2 class="text-4xl font-extrabold text-white tracking-tight mb-4 shadow-sm">Get a Free Quote</h2>
+            <p class="text-white/90 text-lg mb-8 max-w-xl mx-auto font-medium">We have got you covered on all your email and direct marketing needs</p>
+            <a href="contact-us.html" class="inline-block bg-white text-primary font-bold px-10 py-3.5 rounded shadow-lg uppercase tracking-wider text-sm hover:bg-gray-50 transition-colors">GET YOUR FREE SAMPLE TODAY!</a>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-bgmain text-headtext relative pt-16 pb-8 border-t border-bordercol mt-auto">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-red-600 to-secondary"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="pb-12 border-b border-midnight-900 flex flex-col md:flex-row justify-between items-center gap-6">
-                <div><h2 class="text-2xl font-bold text-white tracking-tight">Ready to scale your outreach?</h2><p class="mt-2 text-gray-300 text-sm">Join 10,000+ businesses getting our weekly growth insights.</p></div>
-                <form class="flex w-full md:w-auto gap-2"><input type="email" placeholder="Enter your work email" class="bg-midnight-900 border border-midnight-800 text-white px-4 py-2 rounded-md focus:outline-none focus:border-red-500 w-full md:w-72 text-sm" required><button type="button" class="bg-red-600 hover:bg-red-800 px-5 py-2 rounded-md font-semibold text-sm transition-colors shadow-sm">Subscribe</button></form>
+            <div class="pb-12 border-b border-bordercol flex flex-col md:flex-row justify-between items-center gap-6">
+                <div><h2 class="text-2xl font-bold text-headtext tracking-tight">Ready to scale your outreach?</h2><p class="mt-2 text-paratext text-sm">Join 10,000+ businesses getting our weekly growth insights.</p></div>
+                <form class="flex w-full md:w-auto gap-2"><input type="email" placeholder="Enter your work email" class="bg-bgmain border border-bordercol text-headtext px-4 py-2 rounded-md focus:outline-none focus:border-primary w-full md:w-72 text-sm" required><button type="button" class="bg-btnbg hover:bg-btnbg px-5 py-2 rounded-md font-semibold text-sm transition-colors shadow-sm">Subscribe</button></form>
             </div>
             <div class="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 xl:gap-12">
                 <div class="lg:col-span-2">
                     <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center mb-2">
-                        <span class="text-red-600">B2BLead</span><span class="text-red-500">Nex</span>
+                        <span class="text-primary">B2BLead</span><span class="text-primary">Nex</span>
                     </a>
-                    <p class="mt-4 text-gray-300 text-sm leading-relaxed max-w-sm">The world's most accurate B2B contact database. Accelerate your sales pipeline, enrich your CRM, and close more deals with premium targeted leads.</p>
+                    <p class="mt-4 text-paratext text-sm leading-relaxed max-w-sm">The world's most accurate B2B contact database. Accelerate your sales pipeline, enrich your CRM, and close more deals with premium targeted leads.</p>
                     <div class="mt-6 space-y-4">
-                        <a href="mailto:sowmyashetty1227@gmail.com" class="flex items-center text-gray-300 hover:text-red-400 transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-midnight-900 flex items-center justify-center border border-midnight-800 group-hover:border-red-600 transition-colors mr-3"><svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><span class="text-sm">sowmyashetty1227@gmail.com</span></a>
-                        <a href="tel:+917760747212" class="flex items-center text-gray-300 hover:text-red-400 transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-midnight-900 flex items-center justify-center border border-midnight-800 group-hover:border-red-600 transition-colors mr-3"><svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg></div><span class="text-sm">+91 7760747212</span></a>
+                        <a href="mailto:info@b2bleadnex.com" class="flex items-center text-paratext hover:text-primary transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-bgmain flex items-center justify-center border border-bordercol group-hover:border-primary transition-colors mr-3"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><span class="text-sm">info@b2bleadnex.com</span></a>
+                        <a href="tel:+917760747212" class="flex items-center text-paratext hover:text-primary transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-bgmain flex items-center justify-center border border-bordercol group-hover:border-primary transition-colors mr-3"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg></div><span class="text-sm">+91 7760747212</span></a>
                     </div>
                 </div>
-                <div><h3 class="text-xs font-bold tracking-widest uppercase text-white mb-5">Solutions</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-gray-300 hover:text-red-400 transition-colors">B2B Email List</a></li><li><a href="#" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Email Appending</a></li><li><a href="#" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Data Enrichment</a></li><li><a href="#" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Data Validation</a></li><li><a href="#" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Direct Dials</a></li></ul></div>
-                <div><h3 class="text-xs font-bold tracking-widest uppercase text-white mb-5">Company</h3><ul class="space-y-3"><li><a href="about.html" class="text-sm text-gray-300 hover:text-red-400 transition-colors">About Us</a></li><li><a href="pricing.html" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Pricing Options</a></li><li><a href="blog.html" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Blog & Insights</a></li><li><a href="#" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Careers</a></li><li><a href="contact-us.html" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Contact Us</a></li></ul></div>
-                <div><h3 class="text-xs font-bold tracking-widest uppercase text-white mb-5">Legal & Help</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Privacy Policy</a></li><li><a href="#" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Terms & Conditions</a></li><li><a href="#" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Disclaimer</a></li><li><a href="#" class="text-sm text-gray-300 hover:text-red-400 transition-colors">Help Center</a></li><li><a href="#" class="text-sm text-gray-300 hover:text-red-400 transition-colors">API Documentation</a></li></ul></div>
+                <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Solutions</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">B2B Email List</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Email Appending</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Enrichment</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Validation</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Direct Dials</a></li></ul></div>
+                <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Company</h3><ul class="space-y-3"><li><a href="about.html" class="text-sm text-paratext hover:text-primary transition-colors">About Us</a></li><li><a href="pricing.html" class="text-sm text-paratext hover:text-primary transition-colors">Pricing Options</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Careers</a></li><li><a href="contact-us.html" class="text-sm text-paratext hover:text-primary transition-colors">Contact Us</a></li></ul></div>
+                <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Legal & Help</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Privacy Policy</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Terms & Conditions</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Disclaimer</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Help Center</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">API Documentation</a></li></ul></div>
             </div>
-            <div class="pt-8 border-t border-midnight-900 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-xs text-gray-400">&copy; 2026 B2BLeadNex. All rights reserved.</p>
+            <div class="pt-8 border-t border-bordercol flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-paratext">&copy; 2026 B2BLeadNex. All rights reserved.</p>
                 <div class="flex space-x-5">
-                    <a href="#" class="text-gray-400 hover:text-red-500 transition-colors"><span class="sr-only">LinkedIn</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                    <a href="#" class="text-gray-400 hover:text-red-500 transition-colors"><span class="sr-only">Facebook</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
-                    <a href="#" class="text-gray-400 hover:text-red-500 transition-colors"><span class="sr-only">X (Twitter)</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="#" class="text-paratext hover:text-primary transition-colors"><span class="sr-only">LinkedIn</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    <a href="#" class="text-paratext hover:text-primary transition-colors"><span class="sr-only">Facebook</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                    <a href="#" class="text-paratext hover:text-primary transition-colors"><span class="sr-only">X (Twitter)</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
                 </div>
             </div>
         </div>
