@@ -54,6 +54,9 @@
         .faq-arrow::after { content: '+'; display: inline-block; font-size: 1.5rem; font-weight: 300; transition: transform 0.3s; color: #09C000; }
         details[open] > summary .faq-arrow::after { transform: rotate(45deg); }
     </style>
+<link rel="icon" type="image/png" href="image/icon png 2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <style>.iti { width: 100%; display: block; }</style>
 </head>
 <body class="bg-bgmain flex flex-col min-h-screen font-sans text-paratext">
 
@@ -64,7 +67,7 @@
                 <div class="flex justify-between items-center h-20">
                     <div class="flex-1 flex justify-start items-center">
                         <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center">
-                            <span class="text-headtext drop-shadow-sm">B2BLead</span><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400 drop-shadow-sm">Nex</span>
+                            <img src="image/logo png.png" alt="B2BLeadNex Logo" class="h-10 w-auto drop-shadow-sm mt-1.5">
                         </a>
                     </div>
                     
@@ -240,13 +243,8 @@
                                 </div>
                                 <input name="email" type="email" placeholder="Business Email*" required class="w-full pl-10 pr-4 py-2.5 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary transition-colors">
                             </div>
-                            <div class="flex">
-                                <button type="button" class="flex-shrink-0 z-10 inline-flex items-center py-2 px-4 text-sm font-medium text-center text-headtext bg-bgsec border border-transparent border-r-bordercol rounded-l-md transition-colors">
-                                    <img src="https://flagcdn.com/w20/us.png" alt="US" class="h-3 w-4 mr-1 inline"> +1 <span class="text-[10px] ml-1">▼</span>
-                                </button>
-                                <div class="relative w-full">
-                                    <input name="phone" type="tel" placeholder="Business Phone*" required class="block w-full pl-3 pr-4 py-2.5 bg-bgsec border border-transparent rounded-r-md text-sm text-headtext focus:outline-none focus:border-primary transition-colors">
-                                </div>
+                            <div class="relative w-full">
+                                <input name="phone" type="tel" placeholder="Business Phone*" required class="block w-full pr-4 py-2.5 bg-bgsec border border-transparent rounded-md text-sm text-headtext focus:outline-none focus:border-primary transition-colors">
                             </div>
                             <div class="relative">
                                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -279,15 +277,15 @@
             <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center mb-16">
                 <div>
                     <h2 class="text-4xl font-extrabold text-secondary leading-tight">
-                        Grow Your Graph by <br> Reaching Targeted <br> Hospitals with Our <br> Sales Leads
+                        Verified Hospital Contact Database
                     </h2>
                 </div>
                 <div class="mt-6 lg:mt-0">
                     <p class="text-sm text-headtext leading-relaxed mb-4">
-                        Our Opt-in <strong>Hospital Email List</strong> is a verified database that will help you to target various medical centers, clinics, and hospital administrators from across the globe. It is verified to remove duplicate and incorrect data to keep it free of outdated and redundant contacts. We provide relevant details such as hospital names, bed size, hospital type, executive decision-makers (CEOs, CFOs), country, state; SIC code, email and mailing address, phone number, etc.
+                        Our Verified Hospital Contact Database provides accurate and regularly updated business contact information for hospitals and healthcare organizations worldwide. Access key details such as business email addresses, direct phone numbers, department information, hospital names, executive contacts, locations, and other essential business data to support targeted outreach.
                     </p>
                     <p class="text-sm text-headtext leading-relaxed mb-4">
-                        With such well-segmented details in the Hospital Mailing List you can reach the right audience and leverage the best B2B opportunities. You can directly connect with hospital purchasing directors...
+                        Whether you're marketing medical equipment, healthcare technology, pharmaceutical products, consulting services, or B2B healthcare solutions, our database helps you connect with hospital decision-makers and procurement teams more efficiently. Improve lead generation, increase engagement, and accelerate business growth with reliable healthcare contact data.
                     </p>
                     <a href="#" class="text-primary font-bold text-sm tracking-widest uppercase mt-2 inline-block hover:text-secondary">READ MORE</a>
                 </div>
@@ -618,7 +616,7 @@
             <div class="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 xl:gap-12">
                 <div class="lg:col-span-2">
                     <a href="#" class="text-3xl font-extrabold tracking-tight flex items-center mb-2">
-                        <span class="text-headtext drop-shadow-sm">B2BLead</span><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400 drop-shadow-sm">Nex</span>
+                        <img src="image/logo png.png" alt="B2BLeadNex Logo" class="h-10 w-auto drop-shadow-sm mt-1.5">
                     </a>
                     <p class="mt-4 text-paratext text-sm leading-relaxed max-w-sm">The world's most accurate B2B contact database. Accelerate your sales pipeline, enrich your CRM, and close more deals with premium targeted leads.</p>
                     <div class="mt-6 space-y-4">
@@ -699,5 +697,19 @@
         });
     </script>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var phoneInputs = document.querySelectorAll('input[name="phone"]');
+            phoneInputs.forEach(function(input) {
+                window.intlTelInput(input, {
+                    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+                    initialCountry: "us",
+                    separateDialCode: true,
+                });
+            });
+        });
+    </script>
 </body>
 </html>
