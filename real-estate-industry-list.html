@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Direct Access to Real Estate Decision Makers - B2BLeadNex</title>
     <script src="https://cdn.tailwindcss.com"></script>
-                <script>
+                                                <script>
         tailwind.config = {
             theme: { 
+                screens: {
+                    'mob-360': '360px',
+                    'mob-390': '390px',
+                    'mob-393': '393px',
+                    'mob-412': '412px',
+                    'tab-768': '768px',
+                    'tab-800': '800px',
+                    'tab-820': '820px',
+                    'desk-1280': '1280px',
+                    'desk-1366': '1366px',
+                    'desk-1536': '1536px',
+                    'desk-1920': '1920px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+                },
                 extend: { 
                     colors: { 
                         primary: '#09C000',
@@ -20,6 +38,7 @@
                         btnbg: '#09C000',
                         btntext: '#FFFFFF',
                         hovercol: '#2CCB1F',
+                        darkbg: '#111111',
                     } 
                 } 
             }
@@ -47,7 +66,7 @@
                 <div class="flex justify-between items-center h-20">
                     <div class="flex-1 flex justify-start items-center">
                         <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center">
-                            <span class="text-primary">B2BLead</span><span class="text-primary">Nex</span>
+                            <span class="text-headtext drop-shadow-sm">B2BLead</span><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400 drop-shadow-sm">Nex</span>
                         </a>
                     </div>
                     
@@ -63,6 +82,7 @@
                                     <a href="hospital-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Hospital Email List</a>
                                     <a href="nurses-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Nurses Email List</a>
                                     <a href="physician-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Physicians Email List</a>
+                                    <a href="healthcare-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +92,8 @@
                             <div class="hidden group-hover:block absolute top-[calc(100%-0.5rem)] left-0 w-48 pt-2 z-50">
                                 <div class="bg-bgmain shadow-xl rounded-md border border-bordercol overflow-hidden py-1">
                                     <a href="aws-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">AWS Users List</a>
-                                    <a href="as400-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">AS/400 Users List</a>
+                                    <a href="crm-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CRM Users List</a>
+                                    <a href="technology-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -84,6 +105,7 @@
                                     <a href="ceo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CEO Email List</a>
                                     <a href="cfo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CFO Email List</a>
                                     <a href="cmo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CMO Email List</a>
+                                    <a href="professionals-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -97,6 +119,7 @@
                                     <a href="oil-gas-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Oil & Gas Industry</a>
                                     <a href="real-estate-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Real Estate Industry</a>
                                     <a href="manufacturing-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Manufacturing Industry</a>
+                                    <a href="industry-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -114,61 +137,65 @@
 
         <div id="mobile-menu" class="hidden lg:hidden bg-bgmain border-t border-bordercol shadow-xl absolute top-full w-full max-h-[85vh] overflow-y-auto pb-6">
             <div class="px-4 py-2 space-y-1">
-                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">Home</a>
-                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">About Us</a>
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">About Us</a>
                 
                 <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                         <a href="healthcare-list.html" class="flex-1">Healthcare</a>
                         <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="pl-6 pb-2 space-y-1">
-                        <a href="dentist-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Dentists Email List</a>
-                        <a href="hospital-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Hospital Email List</a>
-                        <a href="nurses-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Nurses Email List</a>
-                        <a href="physician-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Physicians Email List</a>
+                        <a href="dentist-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Dentists Email List</a>
+                        <a href="hospital-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Hospital Email List</a>
+                        <a href="nurses-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Nurses Email List</a>
+                        <a href="physician-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Physicians Email List</a>
+                        <a href="healthcare-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
                     </div>
                 </details>
-
+                
                 <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                         <a href="technology-list.html" class="flex-1">Technology</a>
                         <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="pl-6 pb-2 space-y-1">
-                        <a href="aws-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">AWS Users List</a>
-                        <a href="as400-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">AS/400 Users List</a>
-                    </div>
-                </details>
-                
-                <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                        <a href="professionals-data-list.html" class="flex-1">Professionals Data</a>
-                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </summary>
-                    <div class="pl-6 pb-2 space-y-1">
-                        <a href="ceo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CEO Email List</a>
-                        <a href="cfo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CFO Email List</a>
-                        <a href="cmo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CMO Email List</a>
+                        <a href="aws-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">AWS Users List</a>
+                        <a href="crm-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CRM Users List</a>
+                        <a href="technology-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
                     </div>
                 </details>
 
                 <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <a href="professionals-data-list.html" class="flex-1">Professionals Data</a>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-6 pb-2 space-y-1">
+                        <a href="ceo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CEO Email List</a>
+                        <a href="cfo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CFO Email List</a>
+                        <a href="cmo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CMO Email List</a>
+                        <a href="professionals-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                         <a href="industry-wise-data-list.html" class="flex-1">Industry Wise Data</a>
                         <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="pl-6 pb-2 space-y-1">
-                        <a href="automotive-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Automotive Industry</a>
-                        <a href="banking-finance-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Banking & Finance Industry</a>
-                        <a href="oil-gas-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Oil & Gas Industry</a>
-                        <a href="real-estate-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Real Estate Industry</a>
-                        <a href="manufacturing-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Manufacturing Industry</a>
+                        <a href="automotive-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Automotive Industry</a>
+                        <a href="banking-finance-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Banking & Finance Industry</a>
+                        <a href="oil-gas-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Oil & Gas Industry</a>
+                        <a href="real-estate-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Real Estate Industry</a>
+                        <a href="manufacturing-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Manufacturing Industry</a>
+                        <a href="industry-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
                     </div>
                 </details>
                 
-                <a href="pricing.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">Pricing</a>
-                <a href="contact-us.html" class="block mt-4 px-3 py-3 text-center rounded-full text-base font-bold uppercase tracking-wider bg-btnbg text-btntext hover:bg-btnbg transition-colors shadow-md">Contact Us</a>
+                <a href="pricing.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">Pricing</a>
+                <a href="contact-us.html" class="block mt-4 px-3 py-3 rounded-md text-base font-bold text-white bg-primary hover:bg-hovercol text-center transition-colors">Contact Us</a>
             </div>
         </div>
     </header>
@@ -286,7 +313,7 @@
                 <span class="inline-block py-1 px-3 rounded bg-[#09C000]/10 text-[#09C000] font-bold text-xs uppercase tracking-wider mb-4 border border-[#09C000]/20">Overview</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-headtext tracking-tight mb-6">Verified and Accurate Real Estate Email List</h2>
                 <p class="text-paratext text-lg mb-4 leading-relaxed">Do you need a trustworthy Real Estate Industry Email List to communicate with real estate agents, brokers, contractors, key decision-makers, and professionals? Do you want your sales and marketing teams to hit the right inboxes to promote your real estate services and solutions?</p>
-                <p class="text-paratext mb-6 leading-relaxed">If yes, then partner with Span Global Services today. Our Real Estate Email List will enable you to explore newer options in the real estate industries, resulting in...</p>
+                <p class="text-paratext mb-6 leading-relaxed">If yes, then partner with our platform today. Our Real Estate Email List will enable you to explore newer options in the real estate industries, resulting in...</p>
                 <a href="#" class="text-[#09C000] font-bold hover:text-[#0B6B3A] transition-colors uppercase text-sm tracking-wider flex items-center">Read More <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></a>
             </div>
             <div class="mt-10 lg:mt-0">
@@ -406,7 +433,7 @@
                     <span class="faq-arrow"></span>
                 </summary>
                 <div class="px-6 pb-6 text-paratext leading-relaxed">
-                    There are a plethora of email list providers. However, Span Global Services’ real estate industry email list is carefully designed to offer you a 95% deliverability rate, with updated, credible data for maximum engagements and organic conversions.
+                    There are a plethora of email list providers. However, Our real estate industry email list is carefully designed to offer you a 95% deliverability rate, with updated, credible data for maximum engagements and organic conversions.
                 </div>
             </details>
 
@@ -471,12 +498,12 @@
             <div class="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 xl:gap-12">
                 <div class="lg:col-span-2">
                     <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center mb-2">
-                        <span class="text-primary">B2BLead</span><span class="text-primary">Nex</span>
+                        <span class="text-headtext drop-shadow-sm">B2BLead</span><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400 drop-shadow-sm">Nex</span>
                     </a>
                     <p class="mt-4 text-paratext text-sm leading-relaxed max-w-sm">The world's most accurate B2B contact database. Accelerate your sales pipeline, enrich your CRM, and close more deals with premium targeted leads.</p>
                     <div class="mt-6 space-y-4">
                         <a href="mailto:lucybrady012@yahoo.com" class="flex items-center text-paratext hover:text-primary transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-bgmain flex items-center justify-center border border-bordercol group-hover:border-primary transition-colors mr-3"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><span class="text-sm">lucybrady012@yahoo.com</span></a>
-                        <span class="flex items-center text-paratext transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-bgmain flex items-center justify-center border border-bordercol group-hover:border-primary transition-colors mr-3"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><span class="text-sm">Texas, USA</span></span>
+                        <div class="mt-4"><span class="text-sm font-bold text-headtext">Serving Businesses Worldwide</span><br/><span class="text-xs text-paratext">🇺🇸 United States | 🇨🇦 Canada | 🇪🇺 Europe | 🇮🇳 India</span></div>
                     </div>
                 </div>
                 <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Solutions</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">B2B Email List</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Email Appending</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Enrichment</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Validation</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Direct Dials</a></li></ul></div>

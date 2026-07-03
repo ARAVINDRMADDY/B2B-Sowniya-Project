@@ -15,7 +15,7 @@ new_desktop = '''                        <div class="group relative flex items-c
                             <div class="hidden group-hover:block absolute top-[calc(100%-0.5rem)] left-0 w-48 pt-2 z-50">
                                 <div class="bg-bgmain shadow-xl rounded-md border border-bordercol overflow-hidden py-1">
                                     <a href="aws-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">AWS Users List</a>
-                                    <a href="as400-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">AS/400 Users List</a>
+                                    <a href="crm-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CRM Users List</a>
                                 </div>
                             </div>
                         </div>'''
@@ -29,7 +29,7 @@ new_mobile = '''                <details class="group">
                     </summary>
                     <div class="pl-6 pb-2 space-y-1">
                         <a href="aws-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">AWS Users List</a>
-                        <a href="as400-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">AS/400 Users List</a>
+                        <a href="crm-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CRM Users List</a>
                     </div>
                 </details>'''
 

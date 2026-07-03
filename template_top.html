@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | B2BLeadNex</title>
+    <title>B2BLeadNex</title>
     <script src="https://cdn.tailwindcss.com"></script>
-                                    <script>
+                                                <script>
         tailwind.config = {
             theme: { 
                 screens: {
@@ -48,23 +47,17 @@
         .scroll-clean::-webkit-scrollbar { width: 6px; }
         .scroll-clean::-webkit-scrollbar-track { background: #F8F8F8; } 
         .scroll-clean::-webkit-scrollbar-thumb { background: #09C000; border-radius: 4px; } 
-        .scroll-clean::-webkit-scrollbar-thumb:hover { background: #0B6B3A; } 
+        .scroll-clean::-webkit-scrollbar-thumb:hover { background: #2CCB1F; } 
         .accordion-arrow::after { content: ''; display: inline-block; width: 6px; height: 6px; border-bottom: 2px solid #666666; border-right: 2px solid #666666; transform: rotate(45deg); transition: transform 0.2s; }
         details[open] > summary .accordion-arrow::after { transform: rotate(-135deg); }
         .accordion-plus::after { content: ''; display: inline-block; width: 8px; height: 8px; background: linear-gradient(#666666,#666666), linear-gradient(#666666,#666666); background-position: center; background-size: 100% 2px, 2px 100%; background-repeat: no-repeat; transition: transform 0.2s; }
         details[open] > summary .accordion-plus::after { transform: rotate(45deg); }
-        
-        /* Custom Background Pattern for Hero */
-        .hero-pattern {
-            background-color: #111111;
-            background-image: radial-gradient(#09C000 1px, transparent 1px);
-            background-size: 40px 40px;
-        }
+        .faq-arrow::after { content: '+'; display: inline-block; font-size: 1.5rem; font-weight: 300; transition: transform 0.3s; color: #09C000; }
+        details[open] > summary .faq-arrow::after { transform: rotate(45deg); }
     </style>
 </head>
 <body class="bg-bgmain flex flex-col min-h-screen font-sans text-paratext">
 
-    <!-- Header -->
     <header class="shadow-md sticky top-0 z-50 w-full flex flex-col">
         <div class="bg-bgmain w-full border-b border-bordercol">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -204,130 +197,3 @@
             </div>
         </div>
     </header>
-
-    
-    <main class="flex-grow flex items-center justify-center min-h-[60vh] bg-bgsec relative">
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#09C000]/10 via-transparent to-transparent"></div>
-        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 py-20">
-            <div class="inline-flex items-center justify-center w-24 h-24 rounded-full bg-[#09C000]/20 text-[#09C000] mb-8 shadow-[0_0_30px_rgba(9,192,0,0.3)]">
-                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                </svg>
-            </div>
-            
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-headtext tracking-tight mb-4">
-                Thank You!
-            </h1>
-            
-            <p class="text-lg text-paratext mb-10 max-w-xl mx-auto">
-                Your request has been successfully submitted. Our team will review your requirements and get back to you shortly.
-            </p>
-            
-            <a href="index.html" class="inline-flex items-center justify-center bg-primary hover:bg-hovercol text-btntext font-bold py-3 px-8 rounded-full transition-colors uppercase tracking-wider shadow-md">
-                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-                Return to Home
-            </a>
-        </div>
-    </main>
-
-
-    <!-- Footer -->
-    <footer class="bg-bgmain text-headtext relative mt-auto pt-16 pb-8 border-t border-bordercol">
-        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-red-600 to-secondary"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="pb-12 border-b border-bordercol flex flex-col md:flex-row justify-between items-center gap-6">
-                <div><h2 class="text-2xl font-bold text-headtext tracking-tight">Ready to scale your outreach?</h2><p class="mt-2 text-paratext text-sm">Join 10,000+ businesses getting our weekly growth insights.</p></div>
-                <form action="https://formsubmit.co/6a6d46bb93cfee41ac27d50f93651400" method="POST" class="flex w-full md:w-auto gap-2">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_subject" value="New Lead from B2BLeadNex Website">
-
-                        <input name="email" type="email" placeholder="Enter your work email" class="bg-bgmain border border-bordercol text-headtext px-4 py-2 rounded-md focus:outline-none focus:border-primary w-full md:w-72 text-sm" required><button type="submit" class="bg-btnbg hover:bg-btnbg px-5 py-2 rounded-md font-semibold text-sm transition-colors shadow-sm">Subscribe</button></form>
-            </div>
-            <div class="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 xl:gap-12">
-                <div class="lg:col-span-2">
-                    <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center mb-2">
-                        <span class="text-headtext drop-shadow-sm">B2BLead</span><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400 drop-shadow-sm">Nex</span>
-                    </a>
-                    <p class="mt-4 text-paratext text-sm leading-relaxed max-w-sm">The world's most accurate B2B contact database. Accelerate your sales pipeline, enrich your CRM, and close more deals with premium targeted leads.</p>
-                    <div class="mt-6 space-y-4">
-                        <a href="mailto:lucybrady012@yahoo.com" class="flex items-center text-paratext hover:text-primary transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-bgmain flex items-center justify-center border border-bordercol group-hover:border-primary transition-colors mr-3"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><span class="text-sm">lucybrady012@yahoo.com</span></a>
-                        <div class="mt-4"><span class="text-sm font-bold text-headtext">Serving Businesses Worldwide</span><br/><span class="text-xs text-paratext">🇺🇸 United States | 🇨🇦 Canada | 🇪🇺 Europe | 🇮🇳 India</span></div>
-                    </div>
-                </div>
-                <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Solutions</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">B2B Email List</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Email Appending</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Enrichment</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Validation</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Direct Dials</a></li></ul></div>
-                <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Company</h3><ul class="space-y-3"><li><a href="about.html" class="text-sm text-paratext hover:text-primary transition-colors">About Us</a></li><li><a href="pricing.html" class="text-sm text-paratext hover:text-primary transition-colors">Pricing Options</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Careers</a></li><li><a href="contact-us.html" class="text-sm text-paratext hover:text-primary transition-colors">Contact Us</a></li></ul></div>
-                <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Legal & Help</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Privacy Policy</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Terms & Conditions</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Disclaimer</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Help Center</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">API Documentation</a></li></ul></div>
-            </div>
-            <div class="pt-8 border-t border-bordercol flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-xs text-paratext">&copy; 2026 B2BLeadNex. All rights reserved.</p>
-                <div class="flex space-x-5">
-                    <a href="#" class="text-paratext hover:text-primary transition-colors"><span class="sr-only">LinkedIn</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                    <a href="#" class="text-paratext hover:text-primary transition-colors"><span class="sr-only">Facebook</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
-                    <a href="#" class="text-paratext hover:text-primary transition-colors"><span class="sr-only">X (Twitter)</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            document.getElementById('menu-icon').classList.toggle('hidden');
-            document.getElementById('close-icon').classList.toggle('hidden');
-        });
-    </script>
-
-    
-
-
-    <!-- Active Nav Highlight Script -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let currentPath = window.location.pathname.split('/').pop();
-            if (!currentPath) currentPath = 'index.html';
-            
-            const allLinks = document.querySelectorAll('header a, #mobile-menu a');
-            allLinks.forEach(link => {
-                if (link.getAttribute('href') === currentPath) {
-                    // Skip if it's a solid button to avoid invisible text
-                    if (link.classList.contains('bg-btnbg') || link.classList.contains('bg-primary')) {
-                        return; 
-                    }
-                    
-                    link.classList.remove('text-headtext', 'text-btntext');
-                    link.classList.add('text-primary');
-                    
-                    if (link.closest('#mobile-menu') && !link.closest('summary')) {
-                        link.classList.add('bg-primary/10');
-                    }
-                    
-                    // Highlight parent dropdown in desktop
-                    const desktopParent = link.closest('.group');
-                    if (desktopParent && !link.closest('#mobile-menu')) {
-                        const parentLink = desktopParent.querySelector('a');
-                        if (parentLink) {
-                            parentLink.classList.remove('text-headtext');
-                            parentLink.classList.add('text-primary');
-                        }
-                    }
-                    
-                    // Highlight and open parent dropdown in mobile
-                    const mobileDetails = link.closest('details');
-                    if (mobileDetails) {
-                        mobileDetails.setAttribute('open', '');
-                        const summaryLink = mobileDetails.querySelector('summary a');
-                        if (summaryLink && !summaryLink.classList.contains('bg-btnbg')) {
-                            summaryLink.classList.remove('text-btntext', 'text-headtext');
-                            summaryLink.classList.add('text-primary');
-                        }
-                    }
-                }
-            });
-        });
-    </script>
-
-</body>
-</html>

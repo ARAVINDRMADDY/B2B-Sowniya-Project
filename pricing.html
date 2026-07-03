@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing | B2BLeadNex</title>
     <script src="https://cdn.tailwindcss.com"></script>
-                <script>
+                                                <script>
         tailwind.config = {
             theme: { 
+                screens: {
+                    'mob-360': '360px',
+                    'mob-390': '390px',
+                    'mob-393': '393px',
+                    'mob-412': '412px',
+                    'tab-768': '768px',
+                    'tab-800': '800px',
+                    'tab-820': '820px',
+                    'desk-1280': '1280px',
+                    'desk-1366': '1366px',
+                    'desk-1536': '1536px',
+                    'desk-1920': '1920px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+                },
                 extend: { 
                     colors: { 
                         primary: '#09C000',
@@ -20,6 +38,7 @@
                         btnbg: '#09C000',
                         btntext: '#FFFFFF',
                         hovercol: '#2CCB1F',
+                        darkbg: '#111111',
                     } 
                 } 
             }
@@ -44,7 +63,7 @@
                 <div class="flex justify-between items-center h-20">
                     <div class="flex-1 flex justify-start items-center">
                         <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center">
-                            <span class="text-primary">B2BLead</span><span class="text-primary">Nex</span>
+                            <span class="text-headtext drop-shadow-sm">B2BLead</span><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400 drop-shadow-sm">Nex</span>
                         </a>
                     </div>
                     
@@ -60,6 +79,7 @@
                                     <a href="hospital-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Hospital Email List</a>
                                     <a href="nurses-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Nurses Email List</a>
                                     <a href="physician-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Physicians Email List</a>
+                                    <a href="healthcare-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +89,8 @@
                             <div class="hidden group-hover:block absolute top-[calc(100%-0.5rem)] left-0 w-48 pt-2 z-50">
                                 <div class="bg-bgmain shadow-xl rounded-md border border-bordercol overflow-hidden py-1">
                                     <a href="aws-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">AWS Users List</a>
-                                    <a href="as400-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">AS/400 Users List</a>
+                                    <a href="crm-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CRM Users List</a>
+                                    <a href="technology-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -81,6 +102,7 @@
                                     <a href="ceo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CEO Email List</a>
                                     <a href="cfo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CFO Email List</a>
                                     <a href="cmo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CMO Email List</a>
+                                    <a href="professionals-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -94,6 +116,7 @@
                                     <a href="oil-gas-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Oil & Gas Industry</a>
                                     <a href="real-estate-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Real Estate Industry</a>
                                     <a href="manufacturing-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Manufacturing Industry</a>
+                                    <a href="industry-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -111,61 +134,65 @@
 
         <div id="mobile-menu" class="hidden lg:hidden bg-bgmain border-t border-bordercol shadow-xl absolute top-full w-full max-h-[85vh] overflow-y-auto pb-6">
             <div class="px-4 py-2 space-y-1">
-                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">Home</a>
-                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">About Us</a>
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">About Us</a>
                 
                 <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                         <a href="healthcare-list.html" class="flex-1">Healthcare</a>
                         <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="pl-6 pb-2 space-y-1">
-                        <a href="dentist-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Dentists Email List</a>
-                        <a href="hospital-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Hospital Email List</a>
-                        <a href="nurses-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Nurses Email List</a>
-                        <a href="physician-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Physicians Email List</a>
+                        <a href="dentist-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Dentists Email List</a>
+                        <a href="hospital-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Hospital Email List</a>
+                        <a href="nurses-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Nurses Email List</a>
+                        <a href="physician-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Physicians Email List</a>
+                        <a href="healthcare-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
                     </div>
                 </details>
-
+                
                 <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                         <a href="technology-list.html" class="flex-1">Technology</a>
                         <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="pl-6 pb-2 space-y-1">
-                        <a href="aws-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">AWS Users List</a>
-                        <a href="as400-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">AS/400 Users List</a>
-                    </div>
-                </details>
-                
-                <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                        <a href="professionals-data-list.html" class="flex-1">Professionals Data</a>
-                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </summary>
-                    <div class="pl-6 pb-2 space-y-1">
-                        <a href="ceo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CEO Email List</a>
-                        <a href="cfo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CFO Email List</a>
-                        <a href="cmo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CMO Email List</a>
+                        <a href="aws-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">AWS Users List</a>
+                        <a href="crm-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CRM Users List</a>
+                        <a href="technology-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
                     </div>
                 </details>
 
                 <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <a href="professionals-data-list.html" class="flex-1">Professionals Data</a>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-6 pb-2 space-y-1">
+                        <a href="ceo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CEO Email List</a>
+                        <a href="cfo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CFO Email List</a>
+                        <a href="cmo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CMO Email List</a>
+                        <a href="professionals-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                         <a href="industry-wise-data-list.html" class="flex-1">Industry Wise Data</a>
                         <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="pl-6 pb-2 space-y-1">
-                        <a href="automotive-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Automotive Industry</a>
-                        <a href="banking-finance-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Banking & Finance Industry</a>
-                        <a href="oil-gas-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Oil & Gas Industry</a>
-                        <a href="real-estate-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Real Estate Industry</a>
-                        <a href="manufacturing-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Manufacturing Industry</a>
+                        <a href="automotive-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Automotive Industry</a>
+                        <a href="banking-finance-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Banking & Finance Industry</a>
+                        <a href="oil-gas-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Oil & Gas Industry</a>
+                        <a href="real-estate-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Real Estate Industry</a>
+                        <a href="manufacturing-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Manufacturing Industry</a>
+                        <a href="industry-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
                     </div>
                 </details>
                 
-                <a href="pricing.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">Pricing</a>
-                <a href="contact-us.html" class="block mt-4 px-3 py-3 text-center rounded-full text-base font-bold uppercase tracking-wider bg-btnbg text-btntext hover:bg-btnbg transition-colors shadow-md">Contact Us</a>
+                <a href="pricing.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">Pricing</a>
+                <a href="contact-us.html" class="block mt-4 px-3 py-3 rounded-md text-base font-bold text-white bg-primary hover:bg-hovercol text-center transition-colors">Contact Us</a>
             </div>
         </div>
     </header>
@@ -174,9 +201,9 @@
         <!-- Hero Background Section -->
         <section class="relative pt-24 pb-48 bg-black/70 bg-blend-overlay bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop');">
             <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Best Pricing Options for<br>Your Online Business</h1>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Flexible Pricing Plans for Every Business</h1>
                 <p class="text-white/80 text-sm md:text-base mb-8 max-w-2xl mx-auto font-medium">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi porta lorem mollis erat imperdiet sed euismod nisi. Tellus rutrum tellus pellentesque eu tincidunt tortor. Leo vel fringilla est ullamcorper eget.
+                    Choose the plan that best fits your business goals. Access verified B2B contact data, AI-powered CRM enrichment, and accurate business email lists to help your sales and marketing teams connect with the right decision-makers and accelerate growth.
                 </p>
                 
                 <!-- Toggle Switch -->
@@ -193,153 +220,177 @@
             </div>
         </section>
 
-        <!-- Pricing Cards Section -->
-        <section class="relative z-20 -mt-32 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-b-2 border-transparent shadow-2xl rounded-lg overflow-hidden bg-white">
-                
-                <!-- Starter Card -->
-                <div class="bg-white flex flex-col text-center border-r border-gray-100">
-                    <div class="p-8 pb-6 border-b border-gray-100">
-                        <h3 class="text-xl text-gray-800 mb-2 font-medium">Starter</h3>
-                        <div class="text-[#FF5B5B] font-bold text-lg mb-4">49$ <span class="text-gray-800 font-medium">Monthly</span></div>
-                        <p class="text-[11px] text-gray-400 leading-relaxed px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+        <!-- Section 1: Content Syndication & Intent Leads -->
+        <section class="py-16 bg-white border-b border-bordercol relative z-10 -mt-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-headtext tracking-tight mb-6">Content Syndication & Intent Leads</h2>
+                        <p class="text-lg text-paratext mb-6">Supercharge your content marketing strategy. We promote your whitepapers, eBooks, and webinars to a highly targeted audience of B2B professionals who are actively researching your solution category.</p>
+                        <p class="text-lg text-paratext mb-8">Get guaranteed lead volumes with built-in intent data. We deliver contacts that have not only matched your ideal customer profile but have explicitly engaged with relevant industry content.</p>
+                        <a href="contact-us.html" class="inline-block bg-primary hover:bg-hovercol text-btntext font-bold px-8 py-3 rounded transition-colors shadow-sm">Get a Content Lead Quote</a>
                     </div>
-                    <div class="p-8 flex-grow">
-                        <ul class="space-y-4 text-xs text-paratext mb-8">
-                            <li class="flex items-center justify-center">Unlimited users <span class="ml-1 border border-gray-400 rounded-full w-3 h-3 inline-flex items-center justify-center text-[8px] text-gray-500">i</span></li>
-                            <li class="flex items-center justify-center">Custom branding <span class="ml-1 border border-gray-400 rounded-full w-3 h-3 inline-flex items-center justify-center text-[8px] text-gray-500">i</span></li>
-                            <li class="flex items-center justify-center">Database integration</li>
-                            <li class="flex items-center justify-center text-gray-400">Sharing links</li>
-                            <li class="flex items-center justify-center text-gray-400">Mobile access <span class="ml-1 border border-gray-300 rounded-full w-3 h-3 inline-flex items-center justify-center text-[8px] text-gray-400">i</span></li>
-                            <li class="flex items-center justify-center text-gray-400">Priority support</li>
-                            <li class="flex items-center justify-center text-gray-400">Dedicated rep</li>
-                            <li class="flex items-center justify-center text-gray-400">Manual invoicing</li>
-                        </ul>
-                        <button onclick="openPricingModal()" class="w-full sm:w-auto px-8 py-3 bg-btnbg hover:bg-hovercol text-btntext rounded-full text-xs font-bold uppercase tracking-wider transition-colors shadow-lg shadow-primary/40">SUBSCRIBE</button>
+                    <div class="mt-10 lg:mt-0">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Content Marketing Data" class="rounded-lg shadow-xl">
                     </div>
                 </div>
-                
-                <!-- Advanced Card (Middle) -->
-                <div class="bg-white flex flex-col text-center relative border-r border-gray-100">
-                    <div class="p-8 pb-6 border-b border-gray-100">
-                        <h3 class="text-xl text-gray-800 mb-2 font-medium">Advanced</h3>
-                        <div class="text-[#FF5B5B] font-bold text-lg mb-4">49$ <span class="text-gray-800 font-medium">Monthly</span></div>
-                        <p class="text-[11px] text-gray-400 leading-relaxed px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                    </div>
-                    <div class="p-8 flex-grow">
-                        <ul class="space-y-4 text-xs text-paratext mb-8">
-                            <li class="flex items-center justify-center">Unlimited users <span class="ml-1 border border-gray-400 rounded-full w-3 h-3 inline-flex items-center justify-center text-[8px] text-gray-500">i</span></li>
-                            <li class="flex items-center justify-center">Custom branding <span class="ml-1 border border-gray-400 rounded-full w-3 h-3 inline-flex items-center justify-center text-[8px] text-gray-500">i</span></li>
-                            <li class="flex items-center justify-center">Database integration</li>
-                            <li class="flex items-center justify-center">Sharing links</li>
-                            <li class="flex items-center justify-center">Mobile access <span class="ml-1 border border-gray-400 rounded-full w-3 h-3 inline-flex items-center justify-center text-[8px] text-gray-500">i</span></li>
-                            <li class="flex items-center justify-center text-gray-400">Priority support</li>
-                            <li class="flex items-center justify-center text-gray-400">Dedicated rep</li>
-                            <li class="flex items-center justify-center text-gray-400">Manual invoicing</li>
-                        </ul>
-                        <button onclick="openPricingModal()" class="w-full sm:w-auto px-8 py-3 bg-btnbg hover:bg-hovercol text-btntext rounded-full text-xs font-bold uppercase tracking-wider transition-colors shadow-lg shadow-primary/40">SUBSCRIBE</button>
-                    </div>
-                </div>
-                
-                <!-- Enterprise Card -->
-                <div class="bg-white flex flex-col text-center">
-                    <div class="p-8 pb-6 border-b border-gray-100">
-                        <h3 class="text-xl text-gray-800 mb-2 font-medium">Enterprise</h3>
-                        <div class="text-[#FF5B5B] font-bold text-lg mb-4">49$ <span class="text-gray-800 font-medium">Monthly</span></div>
-                        <p class="text-[11px] text-gray-400 leading-relaxed px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                    </div>
-                    <div class="p-8 flex-grow">
-                        <ul class="space-y-4 text-xs text-paratext mb-8">
-                            <li class="flex items-center justify-center">Unlimited users <span class="ml-1 border border-gray-400 rounded-full w-3 h-3 inline-flex items-center justify-center text-[8px] text-gray-500">i</span></li>
-                            <li class="flex items-center justify-center">Custom branding <span class="ml-1 border border-gray-400 rounded-full w-3 h-3 inline-flex items-center justify-center text-[8px] text-gray-500">i</span></li>
-                            <li class="flex items-center justify-center">Database integration</li>
-                            <li class="flex items-center justify-center">Sharing links</li>
-                            <li class="flex items-center justify-center">Mobile access <span class="ml-1 border border-gray-400 rounded-full w-3 h-3 inline-flex items-center justify-center text-[8px] text-gray-500">i</span></li>
-                            <li class="flex items-center justify-center">Priority support</li>
-                            <li class="flex items-center justify-center">Dedicated rep</li>
-                            <li class="flex items-center justify-center">Manual invoicing</li>
-                        </ul>
-                        <button onclick="openPricingModal()" class="w-full sm:w-auto px-8 py-3 bg-btnbg hover:bg-hovercol text-btntext rounded-full text-xs font-bold uppercase tracking-wider transition-colors shadow-lg shadow-primary/40">SUBSCRIBE</button>
-                    </div>
-                </div>
-                
             </div>
         </section>
 
-        <!-- Simple and Transparent Pricing Section -->
-        <section class="py-16 text-center max-w-4xl mx-auto px-4 bg-bgmain">
-            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Simple and Transparant Pricing!</h2>
-            <p class="text-gray-400 text-xs sm:text-sm mb-10 max-w-2xl mx-auto leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi porta lorem mollis erat imperdiet sed euismod nisi. Tellus rutrum tellus pellentesque eu tincidunt tortor. Leo vel fringilla est ullamcorper eget.
-            </p>
-            <button onclick="openPricingModal()" class="px-8 py-3 rounded-full border-2 border-primary text-primary font-bold text-sm hover:bg-primary hover:text-btntext transition-colors">
-                Subscribe Now & Get Huge Discount
-            </button>
+        <!-- Section 2: What Impacts Your Quote -->
+        <section class="py-16 bg-bgsec border-b border-bordercol">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-headtext tracking-tight">What Determines Your Pricing?</h2>
+                    <p class="mt-4 text-lg text-paratext max-w-2xl mx-auto">We calculate your customized quote based on four primary factors.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-bordercol text-center">
+                        <div class="bg-primary/10 w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-headtext mb-2">Record Volume</h3>
+                        <p class="text-sm text-paratext">The total number of contacts or accounts you require. Volume discounts apply to larger orders.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-bordercol text-center">
+                        <div class="bg-primary/10 w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-headtext mb-2">Data Depth</h3>
+                        <p class="text-sm text-paratext">Basic contact info versus deep firmographics, tech stack insights, and direct dials.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-bordercol text-center">
+                        <div class="bg-primary/10 w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-headtext mb-2">Update Frequency</h3>
+                        <p class="text-sm text-paratext">Whether you need a one-time list or continuous live updates pushed to your system.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-bordercol text-center">
+                        <div class="bg-primary/10 w-12 h-12 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-headtext mb-2">Data Usage Rights</h3>
+                        <p class="text-sm text-paratext">Licensing terms regarding multi-user access, resale rights, and length of data retention.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- Section 3: Enterprise Solutions -->
+        <section class="py-16 bg-white border-b border-bordercol">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-bgmain rounded-2xl p-8 md:p-12 border border-primary shadow-lg flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-2/3 mb-8 md:mb-0 md:pr-8 text-center md:text-left">
+                        <h2 class="text-3xl font-extrabold text-headtext tracking-tight mb-4">Need an Enterprise Plan?</h2>
+                        <p class="text-lg text-paratext mb-6">For teams needing API integration, unlimited users, and a dedicated account manager. We build custom solutions to fuel your entire revenue engine.</p>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-headtext font-medium text-left">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Unlimited CRM Enrichment</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Full API Access</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Dedicated Data Consultant</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Real-time Data Verification</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center md:justify-end">
+                        <a href="contact-us.html" class="inline-block bg-[#09C000] hover:bg-[#0B6B3A] text-white font-bold px-8 py-4 rounded-lg uppercase tracking-wider text-sm transition-colors shadow-lg">Contact Enterprise Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        
         <!-- FAQ Section -->
         <section class="bg-bgsec py-20 px-4 mt-8 border-t border-bordercol">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-xl sm:text-2xl font-bold text-headtext mb-8 px-4">Frequently Asked Questions!</h2>
+                <h2 class="text-xl sm:text-2xl font-bold text-headtext mb-8 px-4">Frequently Asked Questions</h2>
                 
                 <div class="space-y-0">
-                    <!-- FAQ 1 (Open) -->
                     <details class="group border-b border-bordercol bg-transparent" open>
                         <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-headtext py-5 px-4 outline-none hover:text-primary transition-colors">
-                            <span class="text-sm">Do we have money back gurantee?</span>
+                            <span class="text-sm font-bold">1. What services do you provide?</span>
                             <span class="transition-transform group-open:rotate-45 text-xl font-light">+</span>
                         </summary>
                         <div class="text-gray-600 text-xs sm:text-sm px-4 pb-6 leading-relaxed max-w-3xl">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi porta lorem mollis erat...
+                            We provide verified B2B business email lists, AI-powered CRM data enrichment, lead generation solutions, direct phone numbers, company information, and custom prospect lists to help businesses connect with the right decision-makers.
                         </div>
                     </details>
                     
-                    <!-- FAQ 2 -->
                     <details class="group border-b border-bordercol bg-transparent">
                         <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-headtext py-5 px-4 outline-none hover:text-primary transition-colors">
-                            <span class="text-sm">Is there a discount for yearly service?</span>
+                            <span class="text-sm font-bold">2. How accurate is your data?</span>
                             <span class="transition-transform group-open:rotate-45 text-xl font-light">+</span>
                         </summary>
                         <div class="text-gray-600 text-xs sm:text-sm px-4 pb-6 leading-relaxed max-w-3xl">
-                            Yes, we offer a 20% discount on all annual plans. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Our database is continuously updated and verified to provide accurate business email addresses, direct phone numbers, job titles, and company information. We strive to deliver high-quality data that improves your outreach success.
                         </div>
                     </details>
                     
-                    <!-- FAQ 3 -->
                     <details class="group border-b border-bordercol bg-transparent">
                         <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-headtext py-5 px-4 outline-none hover:text-primary transition-colors">
-                            <span class="text-sm">When will my subscriptions Ends?</span>
+                            <span class="text-sm font-bold">3. Can I upload my CRM for data enrichment?</span>
                             <span class="transition-transform group-open:rotate-45 text-xl font-light">+</span>
                         </summary>
                         <div class="text-gray-600 text-xs sm:text-sm px-4 pb-6 leading-relaxed max-w-3xl">
-                            Your subscription will end at the conclusion of your billing cycle. You can cancel at any time.
+                            Yes. You can upload your existing CRM or contact list, and our AI-powered data enrichment service will update missing information such as business emails, direct phone numbers, job titles, and company details.
                         </div>
                     </details>
                     
-                    <!-- FAQ 4 -->
                     <details class="group border-b border-bordercol bg-transparent">
                         <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-headtext py-5 px-4 outline-none hover:text-primary transition-colors">
-                            <span class="text-sm">How much does it cost to process payments?</span>
+                            <span class="text-sm font-bold">4. Is your data GDPR and CAN-SPAM compliant?</span>
                             <span class="transition-transform group-open:rotate-45 text-xl font-light">+</span>
                         </summary>
                         <div class="text-gray-600 text-xs sm:text-sm px-4 pb-6 leading-relaxed max-w-3xl">
-                            We do not charge any additional fees for processing payments. The price you see is the price you pay.
+                            Yes. We are committed to responsible data practices and provide business contact information in accordance with applicable data privacy regulations, including GDPR and CAN-SPAM.
                         </div>
                     </details>
                     
-                    <!-- FAQ 5 -->
                     <details class="group border-b border-bordercol bg-transparent">
                         <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-headtext py-5 px-4 outline-none hover:text-primary transition-colors">
-                            <span class="text-sm">How do I close my subscription?</span>
+                            <span class="text-sm font-bold">5. Do you offer custom email lists?</span>
                             <span class="transition-transform group-open:rotate-45 text-xl font-light">+</span>
                         </summary>
                         <div class="text-gray-600 text-xs sm:text-sm px-4 pb-6 leading-relaxed max-w-3xl">
-                            You can close your subscription directly from your account dashboard under the billing settings.
+                            Yes. We can build custom prospect lists based on industry, company size, location, job title, technology used, revenue, and many other targeting criteria.
+                        </div>
+                    </details>
+                    
+                    <details class="group border-b border-bordercol bg-transparent">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-headtext py-5 px-4 outline-none hover:text-primary transition-colors">
+                            <span class="text-sm font-bold">6. Do you offer a free trial or sample data?</span>
+                            <span class="transition-transform group-open:rotate-45 text-xl font-light">+</span>
+                        </summary>
+                        <div class="text-gray-600 text-xs sm:text-sm px-4 pb-6 leading-relaxed max-w-3xl">
+                            Yes. We can provide a sample dataset or demo so you can evaluate the quality of our data before purchasing.
+                        </div>
+                    </details>
+                    
+                    <details class="group border-b border-bordercol bg-transparent">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-headtext py-5 px-4 outline-none hover:text-primary transition-colors">
+                            <span class="text-sm font-bold">7. What payment methods do you accept?</span>
+                            <span class="transition-transform group-open:rotate-45 text-xl font-light">+</span>
+                        </summary>
+                        <div class="text-gray-600 text-xs sm:text-sm px-4 pb-6 leading-relaxed max-w-3xl">
+                            We accept secure online payments through major credit/debit cards and other supported payment methods. Contact our sales team for enterprise billing options.
+                        </div>
+                    </details>
+                    
+                    <details class="group border-b border-bordercol bg-transparent">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-headtext py-5 px-4 outline-none hover:text-primary transition-colors">
+                            <span class="text-sm font-bold">8. Do you offer a money-back guarantee?</span>
+                            <span class="transition-transform group-open:rotate-45 text-xl font-light">+</span>
+                        </summary>
+                        <div class="text-gray-600 text-xs sm:text-sm px-4 pb-6 leading-relaxed max-w-3xl">
+                            If you experience data quality issues, please contact our support team. We review each case individually and work to resolve it through data replacement, credits, or other appropriate solutions in accordance with our refund policy.
                         </div>
                     </details>
                 </div>
             </div>
         </section>
+
     </main>
 
 
@@ -359,12 +410,12 @@
             <div class="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 xl:gap-12">
                 <div class="lg:col-span-2">
                     <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center mb-2">
-                        <span class="text-primary">B2BLead</span><span class="text-primary">Nex</span>
+                        <span class="text-headtext drop-shadow-sm">B2BLead</span><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400 drop-shadow-sm">Nex</span>
                     </a>
                     <p class="mt-4 text-paratext text-sm leading-relaxed max-w-sm">The world's most accurate B2B contact database. Accelerate your sales pipeline, enrich your CRM, and close more deals with premium targeted leads.</p>
                     <div class="mt-6 space-y-4">
                         <a href="mailto:lucybrady012@yahoo.com" class="flex items-center text-paratext hover:text-primary transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-bgmain flex items-center justify-center border border-bordercol group-hover:border-primary transition-colors mr-3"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><span class="text-sm">lucybrady012@yahoo.com</span></a>
-                        <span class="flex items-center text-paratext transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-bgmain flex items-center justify-center border border-bordercol group-hover:border-primary transition-colors mr-3"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><span class="text-sm">Texas, USA</span></span>
+                        <div class="mt-4"><span class="text-sm font-bold text-headtext">Serving Businesses Worldwide</span><br/><span class="text-xs text-paratext">🇺🇸 United States | 🇨🇦 Canada | 🇪🇺 Europe | 🇮🇳 India</span></div>
                     </div>
                 </div>
                 <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Solutions</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">B2B Email List</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Email Appending</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Enrichment</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Validation</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Direct Dials</a></li></ul></div>

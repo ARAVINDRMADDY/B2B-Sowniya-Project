@@ -34,7 +34,7 @@ for filename in os.listdir(directory):
             flags=re.DOTALL
         )
         
-        # 4. Remove form phone block (found in as400-users-list.html, aws-users-list.html)
+        # 4. Remove form phone block (found in crm-users-list.html, aws-users-list.html)
         content = re.sub(
             r'<div class="flex items-center">\s*<svg[^>]*>.*?</svg>\s*<span class="text-sm font-medium">\+91 7760747212</span>\s*</div>',
             '', 

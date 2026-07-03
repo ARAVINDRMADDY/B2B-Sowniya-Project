@@ -335,12 +335,12 @@ def generate_page(title, keywords):
     return header + section1 + section2 + section3 + section4 + section5 + footer
 
 aws_html = generate_page("AWS Users List", "AWS")
-as400_html = generate_page("AS/400 Users List", "AS/400")
+as400_html = generate_page("CRM Users List", "CRM")
 
 with open(os.path.join(directory, "aws-users-list.html"), "w", encoding="utf-8") as f:
     f.write(aws_html)
     
-with open(os.path.join(directory, "as400-users-list.html"), "w", encoding="utf-8") as f:
+with open(os.path.join(directory, "crm-users-list.html"), "w", encoding="utf-8") as f:
     f.write(as400_html)
 
-print("Created aws-users-list.html and as400-users-list.html")
+print("Created aws-users-list.html and crm-users-list.html")

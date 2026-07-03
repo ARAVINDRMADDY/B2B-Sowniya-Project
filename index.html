@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B2BLeadNex</title>
     <script src="https://cdn.tailwindcss.com"></script>
-                <script>
+                                                <script>
         tailwind.config = {
             theme: { 
+                screens: {
+                    'mob-360': '360px',
+                    'mob-390': '390px',
+                    'mob-393': '393px',
+                    'mob-412': '412px',
+                    'tab-768': '768px',
+                    'tab-800': '800px',
+                    'tab-820': '820px',
+                    'desk-1280': '1280px',
+                    'desk-1366': '1366px',
+                    'desk-1536': '1536px',
+                    'desk-1920': '1920px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+                },
                 extend: { 
                     colors: { 
                         primary: '#09C000',
@@ -20,6 +38,7 @@
                         btnbg: '#09C000',
                         btntext: '#FFFFFF',
                         hovercol: '#2CCB1F',
+                        darkbg: '#111111',
                     } 
                 } 
             }
@@ -46,7 +65,7 @@
                 <div class="flex justify-between items-center h-20">
                     <div class="flex-1 flex justify-start items-center">
                         <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center">
-                            <span class="text-primary">B2BLead</span><span class="text-primary">Nex</span>
+                            <span class="text-headtext drop-shadow-sm">B2BLead</span><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400 drop-shadow-sm">Nex</span>
                         </a>
                     </div>
                     
@@ -62,6 +81,7 @@
                                     <a href="hospital-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Hospital Email List</a>
                                     <a href="nurses-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Nurses Email List</a>
                                     <a href="physician-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Physicians Email List</a>
+                                    <a href="healthcare-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +91,8 @@
                             <div class="hidden group-hover:block absolute top-[calc(100%-0.5rem)] left-0 w-48 pt-2 z-50">
                                 <div class="bg-bgmain shadow-xl rounded-md border border-bordercol overflow-hidden py-1">
                                     <a href="aws-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">AWS Users List</a>
-                                    <a href="as400-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">AS/400 Users List</a>
+                                    <a href="crm-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CRM Users List</a>
+                                    <a href="technology-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -83,6 +104,7 @@
                                     <a href="ceo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CEO Email List</a>
                                     <a href="cfo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CFO Email List</a>
                                     <a href="cmo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CMO Email List</a>
+                                    <a href="professionals-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -96,6 +118,7 @@
                                     <a href="oil-gas-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Oil & Gas Industry</a>
                                     <a href="real-estate-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Real Estate Industry</a>
                                     <a href="manufacturing-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Manufacturing Industry</a>
+                                    <a href="industry-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
                                 </div>
                             </div>
                         </div>
@@ -113,61 +136,65 @@
 
         <div id="mobile-menu" class="hidden lg:hidden bg-bgmain border-t border-bordercol shadow-xl absolute top-full w-full max-h-[85vh] overflow-y-auto pb-6">
             <div class="px-4 py-2 space-y-1">
-                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">Home</a>
-                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">About Us</a>
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">About Us</a>
                 
                 <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                         <a href="healthcare-list.html" class="flex-1">Healthcare</a>
                         <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="pl-6 pb-2 space-y-1">
-                        <a href="dentist-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Dentists Email List</a>
-                        <a href="hospital-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Hospital Email List</a>
-                        <a href="nurses-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Nurses Email List</a>
-                        <a href="physician-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Physicians Email List</a>
+                        <a href="dentist-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Dentists Email List</a>
+                        <a href="hospital-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Hospital Email List</a>
+                        <a href="nurses-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Nurses Email List</a>
+                        <a href="physician-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Physicians Email List</a>
+                        <a href="healthcare-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
                     </div>
                 </details>
-
+                
                 <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                         <a href="technology-list.html" class="flex-1">Technology</a>
                         <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="pl-6 pb-2 space-y-1">
-                        <a href="aws-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">AWS Users List</a>
-                        <a href="as400-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">AS/400 Users List</a>
-                    </div>
-                </details>
-                
-                <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                        <a href="professionals-data-list.html" class="flex-1">Professionals Data</a>
-                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </summary>
-                    <div class="pl-6 pb-2 space-y-1">
-                        <a href="ceo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CEO Email List</a>
-                        <a href="cfo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CFO Email List</a>
-                        <a href="cmo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">CMO Email List</a>
+                        <a href="aws-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">AWS Users List</a>
+                        <a href="crm-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CRM Users List</a>
+                        <a href="technology-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
                     </div>
                 </details>
 
                 <details class="group">
-                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <a href="professionals-data-list.html" class="flex-1">Professionals Data</a>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-6 pb-2 space-y-1">
+                        <a href="ceo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CEO Email List</a>
+                        <a href="cfo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CFO Email List</a>
+                        <a href="cmo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CMO Email List</a>
+                        <a href="professionals-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                         <a href="industry-wise-data-list.html" class="flex-1">Industry Wise Data</a>
                         <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="pl-6 pb-2 space-y-1">
-                        <a href="automotive-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Automotive Industry</a>
-                        <a href="banking-finance-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Banking & Finance Industry</a>
-                        <a href="oil-gas-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Oil & Gas Industry</a>
-                        <a href="real-estate-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Real Estate Industry</a>
-                        <a href="manufacturing-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-btntext hover:bg-btnbg/80 transition-colors">Manufacturing Industry</a>
+                        <a href="automotive-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Automotive Industry</a>
+                        <a href="banking-finance-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Banking & Finance Industry</a>
+                        <a href="oil-gas-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Oil & Gas Industry</a>
+                        <a href="real-estate-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Real Estate Industry</a>
+                        <a href="manufacturing-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Manufacturing Industry</a>
+                        <a href="industry-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
                     </div>
                 </details>
                 
-                <a href="pricing.html" class="block px-3 py-3 rounded-md text-base font-bold text-btntext hover:text-btntext hover:bg-btnbg transition-colors">Pricing</a>
-                <a href="contact-us.html" class="block mt-4 px-3 py-3 text-center rounded-full text-base font-bold uppercase tracking-wider bg-btnbg text-btntext hover:bg-btnbg transition-colors shadow-md">Contact Us</a>
+                <a href="pricing.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">Pricing</a>
+                <a href="contact-us.html" class="block mt-4 px-3 py-3 rounded-md text-base font-bold text-white bg-primary hover:bg-hovercol text-center transition-colors">Contact Us</a>
             </div>
         </div>
     </header>
@@ -333,8 +360,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Data Enrichment</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-headtext mb-4">Turn Stale CRM Data into Gold</h2>
-                <p class="text-paratext text-lg">Upload your outdated lists and let our AI engine fill in the blanks. We append missing emails, direct dials, and update job titles instantly.</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-headtext mb-4">Transform Outdated CRM Data into Accurate, Actionable Insights</h2>
+                <p class="text-paratext text-lg">Our AI-powered data enrichment solution updates outdated records by adding verified business emails, direct phone numbers, current job titles, and other essential contact details—so your team can reach the right prospects with confidence.</p>
             </div>
             
             <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
@@ -522,7 +549,7 @@
                         <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-headtext mb-3">Hyper-Targeted Filters</h3>
-                    <p class="text-paratext text-sm mb-4 leading-relaxed">Filter your lists using 50+ data points including tech stack, revenue, employee count, recent funding, and precise job titles.</p>
+                    <p class="text-paratext text-sm mb-4 leading-relaxed">Build precise prospect lists using advanced filters such as industry, revenue, employee count, technology stack, job title, and location—so you can connect with the right decision-makers faster.</p>
                     <ul class="space-y-2 text-xs font-medium text-headtext">
                         <li class="flex items-center"><svg class="w-4 h-4 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Technographic Data</li>
                         <li class="flex items-center"><svg class="w-4 h-4 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Firmographic Details</li>
@@ -589,103 +616,77 @@
         </div>
     </section>
 
-    <!-- SECTION 3: HOW IT WORKS / UI MOCKUP (70+ lines) -->
-    <section class="py-24 bg-bgsec border-b border-bordercol">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 gap-16 items-center">
-                <div class="mb-16 lg:mb-0">
-                    <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">The Platform</span>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-headtext mb-6 leading-tight">Data Intelligence at your fingertips</h2>
-                    <p class="text-paratext text-lg mb-8 leading-relaxed">
-                        Requesting highly specific, verified lists has never been easier. Our platform maps the global B2B ecosystem.
+    <!-- SECTION 3: PREMIUM CAPABILITIES -->
+    <section class="py-24 relative overflow-hidden bg-[#0A0A0A] border-b border-white/5">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#2CCB1F]/10 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiLz48L3N2Zz4=')] opacity-50 z-0"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20 max-w-3xl mx-auto">
+                <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/5 border border-primary/30 text-primary font-bold text-xs uppercase tracking-widest mb-6 backdrop-blur-sm shadow-[0_0_15px_rgba(9,192,0,0.15)]">
+                    <span class="w-2 h-2 rounded-full bg-primary mr-2 animate-pulse"></span> The Platform
+                </span>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                    Data Intelligence at your <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#2CCB1F]">fingertips</span>
+                </h2>
+                <p class="text-lg text-gray-400 font-light leading-relaxed">
+                    Requesting highly specific, verified lists has never been easier. Our platform maps the global B2B ecosystem with unprecedented precision and scale.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-lg hover:bg-white/10 hover:border-primary/50 transition-all duration-500 group transform hover:-translate-y-2 shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl flex items-center justify-center border border-primary/30 mb-8 group-hover:scale-110 transition-transform duration-500 shadow-inner">
+                        <span class="text-3xl font-black text-primary">1</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Define your ICP</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                        Tell us exactly who you want to target using our 50+ data filters including NAICS codes, tech installs, funding rounds, and precise job functions.
                     </p>
-                    
-                    <div class="space-y-8">
-                        <div class="flex">
-                            <div class="flex-shrink-0 mt-1">
-                                <div class="w-8 h-8 rounded-full bg-btnbg text-btntext flex items-center justify-center font-bold text-sm">1</div>
-                            </div>
-                            <div class="ml-4">
-                                <h4 class="text-lg font-bold text-headtext mb-1">Define your ICP</h4>
-                                <p class="text-sm text-paratext">Tell us exactly who you want to target using our 50+ data filters including NAICS codes, tech installs, and job functions.</p>
-                            </div>
-                        </div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 mt-1">
-                                <div class="w-8 h-8 rounded-full bg-btnbg text-btntext flex items-center justify-center font-bold text-sm">2</div>
-                            </div>
-                            <div class="ml-4">
-                                <h4 class="text-lg font-bold text-headtext mb-1">AI & Human Verification</h4>
-                                <p class="text-sm text-paratext">Our systems pull the raw data, run it through AI syntax checks, and our QA team manually verifies critical records.</p>
-                            </div>
-                        </div>
-                        <div class="flex">
-                            <div class="flex-shrink-0 mt-1">
-                                <div class="w-8 h-8 rounded-full bg-btnbg text-btntext flex items-center justify-center font-bold text-sm">3</div>
-                            </div>
-                            <div class="ml-4">
-                                <h4 class="text-lg font-bold text-headtext mb-1">Download & Launch</h4>
-                                <p class="text-sm text-paratext">Receive your clean list in a CRM-ready format, fully compliant and ready for your outbound sales team.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-10">
-                        <a href="contact-us.html" class="inline-flex items-center text-primary font-bold hover:text-hovercol transition-colors">
-                            Build Your List Now <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </a>
+                    <div class="h-1 w-12 bg-primary/20 rounded-full overflow-hidden">
+                        <div class="h-full bg-primary w-0 group-hover:w-full transition-all duration-700 ease-out"></div>
                     </div>
                 </div>
-                
-                <div class="relative">
-                    <!-- Fake UI Mockup -->
-                    <div class="bg-bgmain rounded-xl shadow-2xl border border-bordercol overflow-hidden transform rotate-2 hover:rotate-0 transition-transform duration-500">
-                        <div class="bg-bgsec border-b border-bordercol p-3 flex items-center justify-between">
-                            <div class="flex space-x-2">
-                                <div class="w-3 h-3 rounded-full bg-red-400"></div>
-                                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
-                                <div class="w-3 h-3 rounded-full bg-green-400"></div>
-                            </div>
-                            <div class="text-xs text-paratext font-mono">B2BLeadNex Dashboard</div>
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-center justify-between border-b border-bordercol pb-4 mb-4">
-                                <div class="font-bold text-headtext">List Builder</div>
-                                <div class="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full font-bold">52,481 Contacts Found</div>
-                            </div>
-                            
-                            <div class="space-y-4">
-                                <div class="flex justify-between items-center bg-bgsec p-3 rounded border border-bordercol">
-                                    <span class="text-sm text-headtext font-medium">Industry: Software (NAICS 5112)</span>
-                                    <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                </div>
-                                <div class="flex justify-between items-center bg-bgsec p-3 rounded border border-bordercol">
-                                    <span class="text-sm text-headtext font-medium">Job Title: CTO, VP of Engineering</span>
-                                    <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                </div>
-                                <div class="flex justify-between items-center bg-bgsec p-3 rounded border border-bordercol">
-                                    <span class="text-sm text-headtext font-medium">Company Size: 500 - 1000</span>
-                                    <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                </div>
-                            </div>
-                            
-                            <div class="mt-6 pt-4 border-t border-bordercol flex justify-between items-center">
-                                <div class="text-xs text-paratext">Est. Match Rate: 99%</div>
-                                <div class="bg-btnbg text-btntext px-4 py-2 rounded text-xs font-bold cursor-pointer hover:bg-btnbg/80">Export to CRM</div>
-                            </div>
-                        </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-lg hover:bg-white/10 hover:border-primary/50 transition-all duration-500 group transform hover:-translate-y-2 shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl flex items-center justify-center border border-primary/30 mb-8 group-hover:scale-110 transition-transform duration-500 shadow-inner">
+                        <span class="text-3xl font-black text-primary">2</span>
                     </div>
-                    
-                    <div class="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 flex items-center space-x-4 animate-bounce">
-                        <div class="w-10 h-10 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center text-green-600 dark:text-green-400">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        </div>
-                        <div>
-                            <div class="text-sm font-bold text-gray-900 dark:text-white">List Generated</div>
-                            <div class="text-xs text-gray-500 dark:text-gray-400">2 seconds ago</div>
-                        </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">AI & Human Verification</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                        Our systems pull the raw data, run it through advanced AI syntax checks, and our expert QA team manually verifies critical records for zero bounce rates.
+                    </p>
+                    <div class="h-1 w-12 bg-primary/20 rounded-full overflow-hidden">
+                        <div class="h-full bg-primary w-0 group-hover:w-full transition-all duration-700 ease-out"></div>
                     </div>
                 </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-lg hover:bg-white/10 hover:border-primary/50 transition-all duration-500 group transform hover:-translate-y-2 shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl flex items-center justify-center border border-primary/30 mb-8 group-hover:scale-110 transition-transform duration-500 shadow-inner">
+                        <span class="text-3xl font-black text-primary">3</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Download & Launch</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                        Receive your pristine list in a CRM-ready format, fully compliant, enriched, and immediately ready for your outbound sales team to deploy.
+                    </p>
+                    <div class="h-1 w-12 bg-primary/20 rounded-full overflow-hidden">
+                        <div class="h-full bg-primary w-0 group-hover:w-full transition-all duration-700 ease-out"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-24 text-center">
+                <a href="contact-us.html" class="group inline-flex items-center justify-center px-8 py-4 text-sm font-bold tracking-widest uppercase text-white bg-primary hover:bg-[#2CCB1F] rounded-full shadow-[0_0_20px_rgba(9,192,0,0.3)] hover:shadow-[0_0_30px_rgba(9,192,0,0.5)] transition-all duration-300 transform hover:-translate-y-1">
+                    Build Your List Now
+                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
             </div>
         </div>
     </section>
@@ -809,12 +810,12 @@
             <div class="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 xl:gap-12">
                 <div class="lg:col-span-2">
                     <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center mb-2">
-                        <span class="text-primary">B2BLead</span><span class="text-primary">Nex</span>
+                        <span class="text-headtext drop-shadow-sm">B2BLead</span><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400 drop-shadow-sm">Nex</span>
                     </a>
                     <p class="mt-4 text-paratext text-sm leading-relaxed max-w-sm">The world's most accurate B2B contact database. Accelerate your sales pipeline, enrich your CRM, and close more deals with premium targeted leads.</p>
                     <div class="mt-6 space-y-4">
                         <a href="mailto:lucybrady012@yahoo.com" class="flex items-center text-paratext hover:text-primary transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-bgmain flex items-center justify-center border border-bordercol group-hover:border-primary transition-colors mr-3"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><span class="text-sm">lucybrady012@yahoo.com</span></a>
-                        <span class="flex items-center text-paratext transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-bgmain flex items-center justify-center border border-bordercol group-hover:border-primary transition-colors mr-3"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div><span class="text-sm">Texas, USA</span></span>
+                        <div class="mt-4"><span class="text-sm font-bold text-headtext">Serving Businesses Worldwide</span><br/><span class="text-xs text-paratext">🇺🇸 United States | 🇨🇦 Canada | 🇪🇺 Europe | 🇮🇳 India</span></div>
                     </div>
                 </div>
                 <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Solutions</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">B2B Email List</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Email Appending</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Enrichment</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Validation</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Direct Dials</a></li></ul></div>

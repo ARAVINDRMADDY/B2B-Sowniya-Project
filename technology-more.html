@@ -1,0 +1,770 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2BLeadNex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+                                                <script>
+        tailwind.config = {
+            theme: { 
+                screens: {
+                    'mob-360': '360px',
+                    'mob-390': '390px',
+                    'mob-393': '393px',
+                    'mob-412': '412px',
+                    'tab-768': '768px',
+                    'tab-800': '800px',
+                    'tab-820': '820px',
+                    'desk-1280': '1280px',
+                    'desk-1366': '1366px',
+                    'desk-1536': '1536px',
+                    'desk-1920': '1920px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+                },
+                extend: { 
+                    colors: { 
+                        primary: '#09C000',
+                        secondary: '#0B6B3A',
+                        bgmain: '#FFFFFF',
+                        bgsec: '#F8F8F8',
+                        bordercol: '#E5E7EB',
+                        headtext: '#222222',
+                        paratext: '#666666',
+                        btnbg: '#09C000',
+                        btntext: '#FFFFFF',
+                        hovercol: '#2CCB1F',
+                        darkbg: '#111111',
+                    } 
+                } 
+            }
+        }
+    </script>
+    <style>
+        .scroll-clean::-webkit-scrollbar { width: 6px; }
+        .scroll-clean::-webkit-scrollbar-track { background: #F8F8F8; } 
+        .scroll-clean::-webkit-scrollbar-thumb { background: #09C000; border-radius: 4px; } 
+        .scroll-clean::-webkit-scrollbar-thumb:hover { background: #2CCB1F; } 
+        .accordion-arrow::after { content: ''; display: inline-block; width: 6px; height: 6px; border-bottom: 2px solid #666666; border-right: 2px solid #666666; transform: rotate(45deg); transition: transform 0.2s; }
+        details[open] > summary .accordion-arrow::after { transform: rotate(-135deg); }
+        .accordion-plus::after { content: ''; display: inline-block; width: 8px; height: 8px; background: linear-gradient(#666666,#666666), linear-gradient(#666666,#666666); background-position: center; background-size: 100% 2px, 2px 100%; background-repeat: no-repeat; transition: transform 0.2s; }
+        details[open] > summary .accordion-plus::after { transform: rotate(45deg); }
+        .faq-arrow::after { content: '+'; display: inline-block; font-size: 1.5rem; font-weight: 300; transition: transform 0.3s; color: #09C000; }
+        details[open] > summary .faq-arrow::after { transform: rotate(45deg); }
+    </style>
+</head>
+<body class="bg-bgmain flex flex-col min-h-screen font-sans text-paratext">
+
+    <header class="shadow-md sticky top-0 z-50 w-full flex flex-col">
+        <div class="bg-bgmain w-full border-b border-bordercol">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex-1 flex justify-start items-center">
+                        <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center">
+                            <span class="text-headtext drop-shadow-sm">B2BLead</span><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400 drop-shadow-sm">Nex</span>
+                        </a>
+                    </div>
+                    
+                    <nav class="hidden lg:flex justify-center space-x-6 items-center h-full">
+                        <a href="index.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors">Home</a>
+                        <a href="about.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors">About Us</a>
+                        
+                        <div class="group relative flex items-center h-full cursor-pointer">
+                            <a href="healthcare-list.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors flex items-center">Healthcare <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                            <div class="hidden group-hover:block absolute top-[calc(100%-0.5rem)] left-0 w-48 pt-2 z-50">
+                                <div class="bg-bgmain shadow-xl rounded-md border border-bordercol overflow-hidden py-1">
+                                    <a href="dentist-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Dentists Email List</a>
+                                    <a href="hospital-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Hospital Email List</a>
+                                    <a href="nurses-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Nurses Email List</a>
+                                    <a href="physician-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Physicians Email List</a>
+                                    <a href="healthcare-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group relative flex items-center h-full cursor-pointer">
+                            <a href="technology-list.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors flex items-center">Technology <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                            <div class="hidden group-hover:block absolute top-[calc(100%-0.5rem)] left-0 w-48 pt-2 z-50">
+                                <div class="bg-bgmain shadow-xl rounded-md border border-bordercol overflow-hidden py-1">
+                                    <a href="aws-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">AWS Users List</a>
+                                    <a href="crm-users-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CRM Users List</a>
+                                    <a href="technology-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="group relative flex items-center h-full cursor-pointer">
+                            <a href="professionals-data-list.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors flex items-center">Professionals Data <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                            <div class="hidden group-hover:block absolute top-[calc(100%-0.5rem)] left-0 w-48 pt-2 z-50">
+                                <div class="bg-bgmain shadow-xl rounded-md border border-bordercol overflow-hidden py-1">
+                                    <a href="ceo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CEO Email List</a>
+                                    <a href="cfo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CFO Email List</a>
+                                    <a href="cmo-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">CMO Email List</a>
+                                    <a href="professionals-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group relative flex items-center h-full cursor-pointer">
+                            <a href="industry-wise-data-list.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors flex items-center">Industry Wise Data <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                            <div class="hidden group-hover:block absolute top-[calc(100%-0.5rem)] left-0 w-56 pt-2 z-50">
+                                <div class="bg-bgmain shadow-xl rounded-md border border-bordercol overflow-hidden py-1">
+                                    <a href="automotive-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Automotive Industry</a>
+                                    <a href="banking-finance-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Banking & Finance Industry</a>
+                                    <a href="oil-gas-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Oil & Gas Industry</a>
+                                    <a href="real-estate-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Real Estate Industry</a>
+                                    <a href="manufacturing-industry-list.html" class="block px-4 py-2 text-sm text-headtext hover:bg-bgsec hover:text-primary">Manufacturing Industry</a>
+                                    <a href="industry-more.html" class="block px-4 py-2 text-sm font-bold text-primary hover:bg-bgsec hover:text-primary border-t border-bordercol">And More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="pricing.html" class="text-headtext hover:text-primary font-bold text-sm transition-colors">Pricing</a>
+                    </nav>
+
+                    <div class="flex-1 flex justify-end items-center space-x-5">
+                        <a href="contact-us.html" class="hidden lg:flex bg-btnbg text-btntext px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-btnbg transition-colors shadow-md items-center"><svg class="w-3.5 h-3.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg> Contact Us</a>
+                        <button id="mobile-menu-btn" class="lg:hidden text-headtext hover:text-primary focus:outline-none p-2 ml-4"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /><path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-bgmain border-t border-bordercol shadow-xl absolute top-full w-full max-h-[85vh] overflow-y-auto pb-6">
+            <div class="px-4 py-2 space-y-1">
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">About Us</a>
+                
+                <details class="group">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <a href="healthcare-list.html" class="flex-1">Healthcare</a>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-6 pb-2 space-y-1">
+                        <a href="dentist-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Dentists Email List</a>
+                        <a href="hospital-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Hospital Email List</a>
+                        <a href="nurses-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Nurses Email List</a>
+                        <a href="physician-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Physicians Email List</a>
+                        <a href="healthcare-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
+                    </div>
+                </details>
+                
+                <details class="group">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <a href="technology-list.html" class="flex-1">Technology</a>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-6 pb-2 space-y-1">
+                        <a href="aws-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">AWS Users List</a>
+                        <a href="crm-users-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CRM Users List</a>
+                        <a href="technology-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <a href="professionals-data-list.html" class="flex-1">Professionals Data</a>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-6 pb-2 space-y-1">
+                        <a href="ceo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CEO Email List</a>
+                        <a href="cfo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CFO Email List</a>
+                        <a href="cmo-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">CMO Email List</a>
+                        <a href="professionals-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <a href="industry-wise-data-list.html" class="flex-1">Industry Wise Data</a>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-6 pb-2 space-y-1">
+                        <a href="automotive-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Automotive Industry</a>
+                        <a href="banking-finance-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Banking & Finance Industry</a>
+                        <a href="oil-gas-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Oil & Gas Industry</a>
+                        <a href="real-estate-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Real Estate Industry</a>
+                        <a href="manufacturing-industry-list.html" class="block px-3 py-2 rounded-md text-sm font-medium text-headtext hover:text-primary transition-colors">Manufacturing Industry</a>
+                        <a href="industry-more.html" class="block px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-hovercol transition-colors">And More...</a>
+                    </div>
+                </details>
+                
+                <a href="pricing.html" class="block px-3 py-3 rounded-md text-base font-bold text-headtext hover:text-primary transition-colors">Pricing</a>
+                <a href="contact-us.html" class="block mt-4 px-3 py-3 rounded-md text-base font-bold text-white bg-primary hover:bg-hovercol text-center transition-colors">Contact Us</a>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow bg-[#003B23]">
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-12">
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">Technology User Lists:</h1>
+                </div>
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-4">
+                    
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Palo Alto Users List</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">CheckPoint Clients Mailing List</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">41st Parameter Software</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Adobe ColdFusion</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">ADP Streamline</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Aloha POS</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Altair</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Amazon EC2</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Amazon Web Services</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Application Performance Management List</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">AzureDesk</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Antivirus Software</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Autotask</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">ACT CRM</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Citrix GoToTraining</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Citrix XenMobile</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Cisco Telepresence Content Server</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Accounting Software Users List</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">ConnectWise</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Cypherix</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Drift</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Ektron</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">EMC</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Five9</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Filemaker</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Genesys</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">GoDaddy Hosting</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">HootSuite</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">iCims</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">IBM ECM</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">ADP Clients List</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Affise Users Mailing Database</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Actuate</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Adobe Connect</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Aegis</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Akamai</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Alterian</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Amazon S3</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Apache Giraph</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Aruba</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Adobe CQ5 (CMS)</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Value-added Resellers Contact Data</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Avaya</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Booker</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Citrix GoToWebcast</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Cisco IOS</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Brightcove</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Cloud Resellers Contact Database</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Drupal</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Epic</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Epicor ERP</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Filenet</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Fleet & Asset Management Email List</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Gensuite</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Gold Mine CRM</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">HubSpot CRM</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Intacct ERP</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">IBM Informix</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Trustwave Users List</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">3D Animation Software</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Adallom</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Adobe FrameMaker</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Alpha Anywhere</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Akana</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Amisys</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Amazon SimpleDB</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">ArangoDB</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Airwatch</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">List of Solarwinds Customers</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Avaya Aura</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Baan</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Citrix XenApp</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Cisco Network Switches</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Terremark</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Cloud Service Providers Email List</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">EduPad</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">EPiServer</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Epicor Retail</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">FireEye</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Freshdesk</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">GAGEpack</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Google Cloud</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">HP Hardware</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">IBM AIX</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">IBM ERP</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Citrix Users Contact Database</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">8x8</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Adaptive Insights</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Adobe Neolane</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Altium</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Allscripts</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Amazon RDS</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Amdocs CRM</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Applicant Tracking System</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Asentinel</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">ATG</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Automotive Software</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Avaya Customers List</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Citrix GoToMeeting</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Citrix XenDesktop</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Cisco</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Salesforce CRM Users List</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Cloudways</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Cyber Security Software</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Deltek Costpoint</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">EHS Software</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Email Marketing Software</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Evault Deltapro</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">FireMon</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Fullstep</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Global eProcure</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">Hadoop</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">HP UX</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">IBM</a>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-2 h-2 text-white/70 mr-3 mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle></svg>
+                    <a href="#" class="text-white/90 hover:text-white transition-colors text-sm font-medium underline underline-offset-4 decoration-white/20 hover:decoration-white/80">IBM Gentran</a>
+                </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-bgmain text-headtext relative pt-16 pb-8 border-t border-bordercol">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-blue-600 to-secondary"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="pb-12 border-b border-bordercol flex flex-col md:flex-row justify-between items-center gap-6">
+                <div><h2 class="text-2xl font-bold text-headtext tracking-tight">Ready to scale your outreach?</h2><p class="mt-2 text-paratext text-sm">Join 10,000+ businesses getting our weekly growth insights.</p></div>
+                <form action="https://formsubmit.co/6a6d46bb93cfee41ac27d50f93651400" method="POST" class="flex w-full md:w-auto gap-2">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New Lead from B2BLeadNex Website">
+
+                        <input name="email" type="email" placeholder="Enter your work email" class="bg-bgmain border border-bordercol text-headtext px-4 py-2 rounded-md focus:outline-none focus:border-primary w-full md:w-72 text-sm" required><button type="submit" class="bg-btnbg hover:bg-btnbg px-5 py-2 rounded-md font-semibold text-btntext text-sm transition-colors shadow-sm">Subscribe</button></form>
+            </div>
+            <div class="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 xl:gap-12">
+                <div class="lg:col-span-2">
+                    <a href="index.html" class="text-3xl font-extrabold tracking-tight flex items-center mb-2">
+                        <span class="text-headtext drop-shadow-sm">B2BLead</span><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400 drop-shadow-sm">Nex</span>
+                    </a>
+                    <p class="mt-4 text-paratext text-sm leading-relaxed max-w-sm">The world's most accurate B2B contact database. Accelerate your sales pipeline, enrich your CRM, and close more deals with premium targeted leads.</p>
+                    <div class="mt-6 space-y-4">
+                        <a href="mailto:lucybrady012@yahoo.com" class="flex items-center text-paratext hover:text-primary transition group"><div class="flex-shrink-0 w-8 h-8 rounded-full bg-bgmain flex items-center justify-center border border-bordercol group-hover:border-primary transition-colors mr-3"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><span class="text-sm">lucybrady012@yahoo.com</span></a>
+                        <div class="mt-4"><span class="text-sm font-bold text-headtext">Serving Businesses Worldwide</span><br/><span class="text-xs text-paratext">🇺🇸 United States | 🇨🇦 Canada | 🇪🇺 Europe | 🇮🇳 India</span></div>
+                    </div>
+                </div>
+                <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Solutions</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">B2B Email List</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Email Appending</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Enrichment</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Data Validation</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Direct Dials</a></li></ul></div>
+                <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Company</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">About Us</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Pricing Options</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Careers</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Contact Us</a></li></ul></div>
+                <div><h3 class="text-xs font-bold tracking-widest uppercase text-headtext mb-5">Legal & Help</h3><ul class="space-y-3"><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Privacy Policy</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Terms & Conditions</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Disclaimer</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">Help Center</a></li><li><a href="#" class="text-sm text-paratext hover:text-primary transition-colors">API Documentation</a></li></ul></div>
+            </div>
+            <div class="pt-8 border-t border-bordercol flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-paratext">&copy; 2026 B2BLeadNex. All rights reserved.</p>
+                <div class="flex space-x-5">
+                    <a href="#" class="text-paratext hover:text-primary transition-colors"><span class="sr-only">LinkedIn</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    <a href="#" class="text-paratext hover:text-primary transition-colors"><span class="sr-only">Facebook</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                    <a href="#" class="text-paratext hover:text-primary transition-colors"><span class="sr-only">X (Twitter)</span><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            document.getElementById('menu-icon').classList.toggle('hidden');
+            document.getElementById('close-icon').classList.toggle('hidden');
+        });
+    </script>
+
+    
+
+
+    <!-- Active Nav Highlight Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let currentPath = window.location.pathname.split('/').pop();
+            if (!currentPath) currentPath = 'index.html';
+            
+            const allLinks = document.querySelectorAll('header a, #mobile-menu a');
+            allLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    // Skip if it's a solid button to avoid invisible text
+                    if (link.classList.contains('bg-btnbg') || link.classList.contains('bg-primary')) {
+                        return; 
+                    }
+                    
+                    link.classList.remove('text-headtext', 'text-btntext');
+                    link.classList.add('text-primary');
+                    
+                    if (link.closest('#mobile-menu') && !link.closest('summary')) {
+                        link.classList.add('bg-primary/10');
+                    }
+                    
+                    // Highlight parent dropdown in desktop
+                    const desktopParent = link.closest('.group');
+                    if (desktopParent && !link.closest('#mobile-menu')) {
+                        const parentLink = desktopParent.querySelector('a');
+                        if (parentLink) {
+                            parentLink.classList.remove('text-headtext');
+                            parentLink.classList.add('text-primary');
+                        }
+                    }
+                    
+                    // Highlight and open parent dropdown in mobile
+                    const mobileDetails = link.closest('details');
+                    if (mobileDetails) {
+                        mobileDetails.setAttribute('open', '');
+                        const summaryLink = mobileDetails.querySelector('summary a');
+                        if (summaryLink && !summaryLink.classList.contains('bg-btnbg')) {
+                            summaryLink.classList.remove('text-btntext', 'text-headtext');
+                            summaryLink.classList.add('text-primary');
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
