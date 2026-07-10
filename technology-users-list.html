@@ -4,70 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technology Users List | B2BLeadNex</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-                                                <script>
-        tailwind.config = {
-            theme: { 
-                screens: {
-                    'mob-360': '360px',
-                    'mob-390': '390px',
-                    'mob-393': '393px',
-                    'mob-412': '412px',
-                    'tab-768': '768px',
-                    'tab-800': '800px',
-                    'tab-820': '820px',
-                    'desk-1280': '1280px',
-                    'desk-1366': '1366px',
-                    'desk-1536': '1536px',
-                    'desk-1920': '1920px',
-                    'sm': '640px',
-                    'md': '768px',
-                    'lg': '1024px',
-                    'xl': '1280px',
-                    '2xl': '1536px',
-                },
-                extend: { 
-                    colors: { 
-                        primary: '#09C000',
-                        secondary: '#0B6B3A',
-                        bgmain: '#FFFFFF',
-                        bgsec: '#F8F8F8',
-                        bordercol: '#E5E7EB',
-                        headtext: '#222222',
-                        paratext: '#666666',
-                        btnbg: '#09C000',
-                        btntext: '#FFFFFF',
-                        hovercol: '#2CCB1F',
-                        darkbg: '#111111',
-                    } 
-                } 
-            }
-        }
-    </script>
-    <style>
-        .scroll-clean::-webkit-scrollbar { width: 6px; }
-        .scroll-clean::-webkit-scrollbar-track { background: #F8F8F8; } 
-        .scroll-clean::-webkit-scrollbar-thumb { background: #09C000; border-radius: 4px; } 
-        .scroll-clean::-webkit-scrollbar-thumb:hover { background: #0B6B3A; } 
-        .accordion-arrow::after { content: ''; display: inline-block; width: 6px; height: 6px; border-bottom: 2px solid #666666; border-right: 2px solid #666666; transform: rotate(45deg); transition: transform 0.2s; }
-        details[open] > summary .accordion-arrow::after { transform: rotate(-135deg); }
-        .faq-arrow::after { content: '+'; display: inline-block; font-size: 1.5rem; font-weight: 300; transition: transform 0.3s; color: #09C000; }
-        details[open] > summary .faq-arrow::after { transform: rotate(45deg); }
-        
-        /* New Custom Animations & Styles for Variety */
-        .glass-morph { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); }
-        @keyframes float1 { 0%, 100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-20px) rotate(5deg); } }
-        @keyframes float2 { 0%, 100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(20px) rotate(-5deg); } }
-        .animate-float-1 { animation: float1 6s ease-in-out infinite; }
-        .animate-float-2 { animation: float2 8s ease-in-out infinite; }
-        
-        /* Typing Effect for Hero */
-        .typing-container { display: inline-block; overflow: hidden; white-space: nowrap; border-right: 3px solid #09C000; animation: blink 0.75s step-end infinite; }
-        @keyframes blink { from, to { border-color: transparent } 50% { border-color: #09C000; } }
-    </style>
-<link rel="icon" type="image/png" href="image/icon png 2.png">
+    <link rel="icon" type="image/png" href="image/icon png 2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
     <style>.iti { width: 100%; display: block; }</style>
+    <link rel="stylesheet" href="dist/output.css">
 </head>
 <body class="bg-bgmain flex flex-col min-h-screen font-sans text-paratext">
 

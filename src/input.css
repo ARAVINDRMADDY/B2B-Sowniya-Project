@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scroll-clean::-webkit-scrollbar { width: 6px; }
+  .scroll-clean::-webkit-scrollbar-track { background: #F8F8F8; } 
+  .scroll-clean::-webkit-scrollbar-thumb { background: #09C000; border-radius: 4px; } 
+  .scroll-clean::-webkit-scrollbar-thumb:hover { background: #2CCB1F; } 
+  .accordion-arrow::after { content: ''; display: inline-block; width: 6px; height: 6px; border-bottom: 2px solid #666666; border-right: 2px solid #666666; transform: rotate(45deg); transition: transform 0.2s; }
+  details[open] > summary .accordion-arrow::after { transform: rotate(-135deg); }
+  .accordion-plus::after { content: ''; display: inline-block; width: 8px; height: 8px; background: linear-gradient(#666666,#666666), linear-gradient(#666666,#666666); background-position: center; background-size: 100% 2px, 2px 100%; background-repeat: no-repeat; transition: transform 0.2s; }
+  details[open] > summary .accordion-plus::after { transform: rotate(45deg); }
+  .faq-arrow::after { content: '+'; display: inline-block; font-size: 1.5rem; font-weight: 300; transition: transform 0.3s; color: #09C000; }
+  details[open] > summary .faq-arrow::after { transform: rotate(45deg); }
+}
