@@ -31,7 +31,7 @@ module.exports = {
         bgsec: '#F8F8F8',
         bordercol: '#E5E7EB',
         headtext: '#222222',
-        paratext: '#666666',
+        paratext: '#555555',
         btnbg: '#006C00',
         btntext: '#FFFFFF',
         hovercol: '#2CCB1F',
