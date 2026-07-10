@@ -25,14 +25,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#09C000',
+        primary: '#006C00',
         secondary: '#0B6B3A',
         bgmain: '#FFFFFF',
         bgsec: '#F8F8F8',
         bordercol: '#E5E7EB',
         headtext: '#222222',
         paratext: '#666666',
-        btnbg: '#09C000',
+        btnbg: '#006C00',
         btntext: '#FFFFFF',
         hovercol: '#2CCB1F',
         darkbg: '#111111',
